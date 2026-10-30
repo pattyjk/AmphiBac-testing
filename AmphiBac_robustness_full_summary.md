@@ -4,15 +4,15 @@
 
 The AmphiBac database is internally consistent. The common way it is used, however — closed-reference matching of amplicon features at 99% identity, then counting "inhibitory" reads — does not recover Bd-inhibitory function. The main reasons:
 
-1. **Isolate labels are not shared by identical 16S sequences.** 69–74% of groups of identical fragments contain conflicting Bd labels.
-2. **Prediction of a held-out isolate's label is near chance once whole studies are held out.** Cohen's κ is about 0.1 for the pipeline's rules, at every fragment length, region and threshold tested.
+1. **Isolate labels are not shared by identical 16S sequences.** 69–74% of groups of identical fragments contain conflicting Bd labels (e.g., the same OTU has variability in % inhibition).
+2. **Prediction of a held-out isolate's label is near chance once whole studies are held out.** Cohen's κ is about 0.1 for the pipeline's rules, at every fragment length, region, and threshold tested.
 3. **Genus alone predicts as well as, or better than, any 16S-identity rule.** This holds for V4 up to a 1,100-bp V2–V8 window.
 4. **The per-sample "inhibitory proportion" is indistinguishable from what random labels give.** It measures how much of the community has a cultured relative in the database (ρ = 0.92–0.97 with the shuffled-label value).
-5. **No metric tracked Bd infection or load** in either Bd dataset, once site and season (or treatment) were accounted for. A naive analysis of the leopard-frog data does find a significant association, but in the *opposite* direction, and it is driven by site.
+5. **No metric tracked Bd infection or load** in either Bd dataset (PJK bullfrog, Brandon Leopard Frogs), once site and season (or treatment) were accounted for. A naive analysis of the leopard-frog data does find a significant association, but in the *opposite* direction, and it is driven by site.
 
 ## 1. Workflow and data tested
 
-**The workflow.** We tested the `tools/antifungal_predictions_pipeline.py` script and the older `scripts/Antifungal_Predictions_conda.sh` from github.com/AmphiBac/AmphiBac-Database. Both run:
+**The workflow.** I tested the `tools/antifungal_predictions_pipeline.py` script and the older `scripts/Antifungal_Predictions_conda.sh` from github.com/AmphiBac/AmphiBac-Database. Both run:
 
 ```
 qiime vsearch cluster-features-closed-reference --p-perc-identity 0.99 --p-strand both
@@ -26,14 +26,14 @@ q2-vsearch sets no `maxaccepts`, `maxrejects` or coverage options, so vsearch's 
 - terminal gaps are ignored when computing identity;
 - there is no minimum query coverage.
 
-We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
+I reproduced this exactly with vsearch 2.32.0 - QIIME itself was not run.
 
 | Data | Use |
 |---|---|
 | AmphiBac 2025.1 (qza = FASTA, 8,739 seqs), plus releases 2020.6 and 2023.2 | Isolate-level tests and release stability |
 | Amphibian meta-analysis: 2,411 samples, 48,431 deblur sOTUs (90 bp) | Real-data impact and permutation null |
 | Bullfrog nitrogen experiment: 40 frogs, 10 ponds, 3,700 ASVs (120 bp), Bd loads | Real-data impact and Bd validation |
-| SERDP leopard frogs: 372 frogs, 6 species-sites, 4 seasons, 12,105 sequenced features (150 bp), Bd loads (100 infected) | Large-scale Bd validation |
+| SERDP leopard frogs: 372 frogs, 6 species-sites, 4 seasons, 12,105 sOTUs (150 bp), Bd loads (100 infected) | Large-scale Bd validation |
 | In-silico fragments cut from isolates: 90 / 100 / 120 / 150 bp, V4, V3–V4, and ten *E. coli*-coordinate windows of 254–1,100 bp | Length, threshold and region tests |
 
 **Ground truth.** Each isolate's `AntiFungal.Function.with.AP.function` label, which is the column that defines the subsets. Using `Bd.Inhibition` instead gave the same conclusions.
