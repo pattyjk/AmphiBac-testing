@@ -254,6 +254,26 @@ The survey covers works citing Woodhams et al. 2015 (*Ecology* 96:595, doi 10.18
 
 Table: [woodhams2015_citers_classified.csv](tables/woodhams2015_citers_classified.csv). Script: [woodhams2015_citation_survey.py](scripts/woodhams2015_citation_survey.py).
 
+## 8h. Does a different Inhibitory cutoff (or an IC50) help?
+
+**No IC50 is available.** AmphiBac assays are single-concentration CFS tests, and score = (1 − proportional Bd growth) × 100. A cutoff of 50 is therefore the single-dose analogue of an IC50.
+
+**Test.** The Inhibitory cutoff was swept from 0 to 95 and every isolate was relabelled at each cutoff.
+- **Isolates:** about 2,900–3,100 CFS-scored isolates from 17 studies; agar-plate isolates have no score.
+- **Prediction:** from exhaustive ≥99% full-coverage hits to isolates in *other* studies, at 120, 150 and 254 bp of V4.
+- **Comparisons:** pipeline-style rules, the mean score of hits, and the genus baseline. Intervals come from 300 study-cluster bootstraps.
+
+**Results:**
+- **No cutoff gets κ above about 0.17**, for any rule or length.
+- **50 is no better than 80.** At 150 bp: any inhibitory hit 0.13 vs 0.10; majority of hits 0.09 vs 0.15; genus −0.02 vs 0.15. Intervals overlap across cutoffs.
+- **Predicting the continuous score is also weak:** Spearman ρ = 0.22–0.25, whether from the hits' mean score or from genus.
+- **The cutoff mainly changes prevalence:** the share of isolates called Inhibitory falls from 91% at 0 to 19% at 95.
+- **Within-study agreement is roughly double.** Restricting hits to the *same* study gives κ 0.25–0.43 and ρ ≈ 0.48. Some of these hits may be re-isolates of the same strain, so this is an approximate ceiling. The limit is lab/assay heterogeneity, not the threshold.
+
+![Cutoff sweep](figures/fig_cutoff_sweep.png)
+
+Table: [cutoff_sweep_results.xlsx](tables/cutoff_sweep_results.xlsx). Script: [cutoff_sweep.py](scripts/cutoff_sweep.py).
+
 ## 9. Recommendations
 
 1. **Report matches as mismatches over the read length, not percent identity.** At 90 bp, 99% means an exact match.
@@ -274,6 +294,7 @@ Table: [woodhams2015_citers_classified.csv](tables/woodhams2015_citers_classifie
     - fix `Assay.Method`.
 12. **Collapse or report ties.** When ≥99% hits disagree, call the feature ambiguous, or report the range of results across shuffled reference orders (see 8f).
 13. **State the matching rule exactly:** tool, identity, coverage, strand, database release and subset. 15 of 57 predictive papers did not.
+14. **Don't tune the 80 cutoff.** Model the continuous score with study (assay) as a random effect, or standardise scores within study before pooling. New assays with dilution series would allow true IC50s.
 
 ## 10. Caveats
 
@@ -329,3 +350,6 @@ Table: [woodhams2015_citers_classified.csv](tables/woodhams2015_citers_classifie
 **Worked example and citation survey (8f, 8g)**
 - [fig_tied_feature_walkthrough.png](figures/fig_tied_feature_walkthrough.png), [tied_feature_references.csv](tables/tied_feature_references.csv), [tied_feature_real_runs.csv](tables/tied_feature_real_runs.csv), [tied_feature_frogs.csv](tables/tied_feature_frogs.csv), [tied_feature_walkthrough.py](scripts/tied_feature_walkthrough.py)
 - [woodhams2015_citers_classified.csv](tables/woodhams2015_citers_classified.csv), [woodhams2015_citation_survey.py](scripts/woodhams2015_citation_survey.py)
+
+**Cutoff sweep (8h)**
+- [fig_cutoff_sweep.png](figures/fig_cutoff_sweep.png), [cutoff_sweep_results.xlsx](tables/cutoff_sweep_results.xlsx), [cutoff_sweep.py](scripts/cutoff_sweep.py)
