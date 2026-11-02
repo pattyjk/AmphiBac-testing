@@ -28,21 +28,21 @@ Repeating this for about 5,000–6,600 isolates gives a 2 × 2 table of predicte
 
 The rules compared:
 
-R1: the label of vsearch's default top hit.
-R2: any hit to the Inhibitory subset, which is the pipeline's logic.
-R3: any hit to the InhibitoryStrict subset.
-R4: the majority label among all ≥99% hits.
+**R1:** the label of vsearch's default top hit.
+**R2:** any hit to the Inhibitory subset, which is the pipeline's logic.
+**R3:** any hit to the InhibitoryStrict subset.
+**R4:** the majority label among all ≥99% hits.
+
 Genus baseline: the majority label of the isolate's genus.
 Why κ and not plain accuracy
 
 κ asks how much better the agreement is than you would get by chance, given how often each label occurs:
-
 κ = (observed agreement − agreement expected by chance) / (1 − agreement expected by chance)
 
-κ = 0: no better than guessing with the same label frequencies.
-κ = 1: perfect agreement.
-κ < 0: worse than chance.
-Plain accuracy or sensitivity is misleading here because the pipeline calls almost everything inhibitory. The 120 bp, 99%, R2 run shows this (one isolate held out at a time):
+| κ = 0: no better than guessing with the same label frequencies.
+| κ = 1: perfect agreement.
+| κ < 0: worse than chance.
+| Plain accuracy or sensitivity is misleading here because the pipeline calls almost everything inhibitory. The 120 bp, 99%, | R2 run shows this (one isolate held out at a time):
 
 ## 1. Workflow and data tested
 
