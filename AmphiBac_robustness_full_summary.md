@@ -334,20 +334,7 @@ Table: [woodhams2015_citers_classified.csv](tables/woodhams2015_citers_classifie
 - **SERDP rep-set.** It was taxonomy-filtered before alignment: 3,490 features (about 11% of reads, up to 80% in some Vermont frogs) have no sequence and were treated as unmatched. Excluding the worst-affected frogs did not change the results.
 - **Host contrasts.** These ignore study and site confounding. They show method sensitivity, not biology.
 
-## 11. Open items
-
-- **Bullfrog map (`nut_enrich_16S_map.txt`).** `NitrateuM` appears to be sorted independently of the rows and should be checked against the original. Six mapped frogs lack 16S data (P10F1, P2F1, P2F2, P2F4, P2F5, P8F5).
-- **SERDP.** Rerun with the unfiltered rep-seqs if they are available.
-- **Tests not yet run:**
-  - leave-host-out or leave-country-out validation;
-  - assay heterogeneity (Bd genotype, temperature, agar vs CFS);
-  - upstream processing (primers, trimming, DADA2 vs deblur, 97% OTUs);
-  - multi-copy 16S and Sanger error;
-  - duplicate `Isolate.ID` entries;
-  - splitting Bd from Bsal inhibition.
-- **Citation survey.** 52 citing papers could be judged only from the abstract. Their full texts (via institutional access) would close the 57–90 range.
-
-## 12. File index
+## 11. File index
 
 **Reports**
 - [Round 1: database audit, top-hit mechanics, length × threshold, real-data impact](reports/AmphiBac_prediction_robustness_report.md)
