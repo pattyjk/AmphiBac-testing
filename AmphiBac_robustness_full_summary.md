@@ -4,15 +4,16 @@
 
 The AmphiBac database is internally consistent. The common way it is used, however — closed-reference matching of amplicon features at 99% identity, then counting "inhibitory" reads — does not recover Bd-inhibitory function. The main reasons:
 
-1. **Isolate labels are not shared by identical 16S sequences.** 69–74% of groups of identical fragments contain conflicting Bd labels (e.g., the same OTU has variability in % inhibition).
-2. **Prediction of a held-out isolate's label is near chance once whole studies are held out.** Cohen's κ is about 0.1 for the pipeline's rules, at every fragment length, region, and threshold tested.
+1. **Isolate labels are not shared by identical 16S sequences.** 69–74% of groups of identical fragments contain conflicting Bd labels.
+2. **Prediction of a held-out isolate's label is near chance once whole studies are held out.** Cohen's κ is about 0.1 for the pipeline's rules, at every fragment length, region and threshold tested.
 3. **Genus alone predicts as well as, or better than, any 16S-identity rule.** This holds for V4 up to a 1,100-bp V2–V8 window.
 4. **The per-sample "inhibitory proportion" is indistinguishable from what random labels give.** It measures how much of the community has a cultured relative in the database (ρ = 0.92–0.97 with the shuffled-label value).
-5. **No metric tracked Bd infection or load** in either Bd dataset (PJK bullfrog, Brandon Leopard Frogs), once site and season (or treatment) were accounted for. A naive analysis of the leopard-frog data does find a significant association, but in the *opposite* direction, and it is driven by site.
+5. **No metric tracked Bd infection or load** in either Bd dataset, once site and season (or treatment) were accounted for. A naive analysis of the leopard-frog data does find a significant association, but in the *opposite* direction, and it is driven by site.
+6. **The practice is common and inconsistent.** At least 57 of the 116 citing papers whose methods could be read matched their own sequences to the database. Their matching rules range from genus name only to 100% identity.
 
 ## 1. Workflow and data tested
 
-**The workflow.** I tested the `tools/antifungal_predictions_pipeline.py` script and the older `scripts/Antifungal_Predictions_conda.sh` from github.com/AmphiBac/AmphiBac-Database. Both run:
+**The workflow.** We tested the `tools/antifungal_predictions_pipeline.py` script and the older `scripts/Antifungal_Predictions_conda.sh` from github.com/AmphiBac/AmphiBac-Database. Both run:
 
 ```
 qiime vsearch cluster-features-closed-reference --p-perc-identity 0.99 --p-strand both
@@ -26,14 +27,14 @@ q2-vsearch sets no `maxaccepts`, `maxrejects` or coverage options, so vsearch's 
 - terminal gaps are ignored when computing identity;
 - there is no minimum query coverage.
 
-I reproduced this exactly with vsearch 2.32.0 - QIIME itself was not run.
+We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
 
 | Data | Use |
 |---|---|
 | AmphiBac 2025.1 (qza = FASTA, 8,739 seqs), plus releases 2020.6 and 2023.2 | Isolate-level tests and release stability |
 | Amphibian meta-analysis: 2,411 samples, 48,431 deblur sOTUs (90 bp) | Real-data impact and permutation null |
 | Bullfrog nitrogen experiment: 40 frogs, 10 ponds, 3,700 ASVs (120 bp), Bd loads | Real-data impact and Bd validation |
-| SERDP leopard frogs: 372 frogs, 6 species-sites, 4 seasons, 12,105 sOTUs (150 bp), Bd loads (100 infected) | Large-scale Bd validation |
+| SERDP leopard frogs: 372 frogs, 6 species-sites, 4 seasons, 12,105 sequenced features (150 bp), Bd loads (100 infected) | Large-scale Bd validation |
 | In-silico fragments cut from isolates: 90 / 100 / 120 / 150 bp, V4, V3–V4, and ten *E. coli*-coordinate windows of 254–1,100 bp | Length, threshold and region tests |
 
 **Ground truth.** Each isolate's `AntiFungal.Function.with.AP.function` label, which is the column that defines the subsets. Using `Bd.Inhibition` instead gave the same conclusions.
@@ -166,6 +167,93 @@ The >80 / ≤−20 label cutoffs therefore split one skewed distribution rather 
 
 Tables: [score_diptest.xlsx](tables/score_diptest.xlsx), [diptest_by_group.csv](tables/diptest_by_group.csv). Script: [score_diptest.py](scripts/score_diptest.py).
 
+## 8c. Tree-based prediction (PICRUSt2-style placement)
+
+We placed reads into a 7,279-isolate reference tree with EPA-ng and predicted traits with castor hidden-state methods, Brownian/OU score models and a study-aware phylogenetic Gaussian process.
+
+- **Benchmark (30-fold leave-study-out).** No tree-based method beat genus majority or majority voting over ≥99% hits:
+  - nearest tip and castor methods: V4 κ 0.11–0.12, AUC 0.57;
+  - study-aware phylogenetic model (the only one to tie the baselines): AUC 0.63, against 0.64 for genus majority and 0.62 for majority voting.
+- **Variance in the inhibition score:** phylogeny 0.26, study 0.25, Bd genotype 0.08, residual 0.42.
+- **Leopard-frog Bd test.** No tree-based metric predicts infection within site × season (OR 0.89–1.27 per SD, all CIs include 1).
+- **Shuffled labels.** The observed effects sit inside the null.
+
+![Placement benchmark](figures/fig_method_comparison.png)
+
+Report: [AmphiBac_placement_method_report.md](reports/AmphiBac_placement_method_report.md).
+
+## 8d. Primer use in amphibian microbiome studies
+
+Of 180 primary studies that state their region:
+
+| Region | Share of studies |
+|---|---|
+| V4 | 57% |
+| V3–V4 | 29% |
+| V4–V5 | 5% |
+| Others | 9% |
+
+V4 fell from 80% of studies in 2015–17 to 42% in 2024–26. Gut studies favour V3–V4, mostly with 338F/806R.
+
+Report: [amphibian_16S_primer_survey.md](reports/amphibian_16S_primer_survey.md).
+
+## 8e. Host-matched databases and reference-order uncertainty
+
+**Host- or location-matched databases.** Restricting AmphiBac to the study host or location makes predictions worse:
+- **Coverage:** there are no Massachusetts bullfrog isolates, and no *R. pipiens* or *R. blairi* isolates. Restriction leaves 55–98% of previously matched reads unmatched in 9 of 11 sets.
+- **Partial overlaps:** the remaining matches are often partial overlaps. Every Tennessee *L. sphenocephalus* match covers only part of the 150-bp read.
+- **Predictability:** same-host references predict isolate labels worse than all references (κ 0.08 vs 0.28 on the same 551 isolates).
+- **Bd:** no restricted metric predicts Bd.
+
+**Reference-order permutations.** We used 10,000 orders, with an emulator of vsearch's k-mer, length and position tie-break validated at 100% agreement against more than 1,200 real shuffled runs.
+- **Pipeline metric:** subset-mode Inhibitory_Proportion is exactly order-invariant.
+- **Top-hit metrics:** the median 95% width of the top-hit inhibitory share is 0.09 (meta), 0.03 (bullfrog) and 0.25 (SERDP).
+- **Conclusions:** no significance call flipped, but effect sizes shifted widely, e.g. adult vs larvae rank-biserial 0.19–0.49.
+
+![Per-sample intervals](figures/fig_per_sample_intervals.png)
+
+Report: [AmphiBac_hostmatch_order_addendum.md](reports/AmphiBac_hostmatch_order_addendum.md).
+## 8f. Worked example: one tied SERDP read through the order permutations
+
+This traces one feature through 1,001 **real** vsearch runs (the distributed order plus 1,000 shuffles, q2-vsearch closed-reference settings): `6a40d31c…`, 150 bp, 6,187 rarefied reads. It is the feature that drives the bimodal SERDP Bd-load slope in 8e.
+- **The tie.** The read matches 13 isolates at ≥99%. Six match at 100%, all *L. catesbeianus* isolates from one Virginia study (AEM.01486-15): three Inhibitory (scores 93, 85, 83) and three NoEffect (77, 17, 11). The isolate scoring 77 is NoEffect only because of the 80 cutoff. Seven more match at 99.3% (5 NoEffect, 2 Inhibitory).
+- **Which isolate wins.** All six 100% matches share the same number of 8-mers with the read (143), so shorter targets are preferred. Only three ever won: AmphiBac_5440 (Inhibitory, 347/1,001), 5442 (NoEffect, 330) and 5563 (NoEffect, 324). The two 1,270-bp isolates are the shortest overall; 5563 is the shortest of the forward-stored ones. The longer Inhibitory isolates 5506 and 5507 never won.
+- **Call rates.** The distributed file order picks 5440, so the default run calls the read Inhibitory. Across orders that happens 35% of the time (emulator: 33%). The pipeline's subset mode calls it Inhibitory 100% of the time.
+- **Per frog.** 12 frogs carry the read: 10 infected Panama (Ngäbe-Buglé) frogs, where it makes up to 0.47 of reads, plus two others at ≤0.006. In the three heaviest carriers, the top-hit inhibitory share falls from 0.56–0.61 to 0.09–0.18 when the call switches to NoEffect.
+- **Bd load.** Flipping only this call, with every other feature at its default-order call, moves the Bd-load slope among the 100 infected frogs from +0.09 per SD (p = 0.49) to −0.14 (p = 0.30). That single switch spans most of the 10,000-order 95% range (−0.18 to +0.14).
+
+![Tied feature walkthrough](figures/fig_tied_feature_walkthrough.png)
+
+Tables: [tied_feature_references.csv](tables/tied_feature_references.csv), [tied_feature_real_runs.csv](tables/tied_feature_real_runs.csv), [tied_feature_frogs.csv](tables/tied_feature_frogs.csv). Script: [tied_feature_walkthrough.py](scripts/tied_feature_walkthrough.py).
+
+## 8g. How often the database is used to predict function
+
+The survey covers works citing Woodhams et al. 2015 (*Ecology* 96:595, doi 10.1890/14-1837.1). OpenAlex lists 222 citing works. After removing 12 PeerJ peer-review reports and 6 preprint/article duplicates, 204 unique papers remain.
+- **Text sources.** Full text came from Europe PMC, Unpaywall and publisher open access. Each paper was classified from its methods and citing passages by a language model, with a second pass on methods sections. The 25 weakest calls were re-run on the whole text. Texts under 10k characters were treated as abstracts.
+
+| Use of the database | Methods read | Abstract only | Total |
+|---|---|---|---|
+| Predictive: matched own amplicon OTUs/ASVs | 54 | 20 | 74 |
+| Predictive: matched own isolate 16S | 3 | 0 | 3 |
+| Records used as data (meta-analysis, assays, probiotic choice) | 6 | 8 | 14 |
+| Background citation only | 51 | 8 | 59 |
+| Cannot tell from the abstract | 2 | 52 | 54 |
+| **Total** | 116 | 88 | 204 |
+
+- **Confirmed predictive use: 57 papers**, about half of the 116 whose methods could be read. A further 20 are probable from the abstract alone. The 52 unresolved papers are mostly closed access (Wiley, Springer, *Proc. B*), so the true count is likely 75–90.
+- **Growth.** Confirmed predictive papers numbered 1–3 per year in 2016–2019, 5–7 per year in 2020–2022, and 7–11 per year in 2023–2025.
+- **No common rule.** Of the 57:
+  - 17 used 100% identity, 8 used 99% and 8 used 97–98%;
+  - 2 used a lower threshold or only a BLAST e-value;
+  - 5 matched by genus or family name without comparing sequences, and 2 used phylogenetic methods;
+  - 15 did not state the rule or cited another paper for it.
+  
+  Only 11 used vsearch, as the current pipeline does. Given sections 3–4, "proportion inhibitory" values from these studies are not directly comparable.
+- **Not verified.** The table also records whether each study linked predictions to Bd and whether it ran its own assays. Neither field was audited.
+- **Coverage.** Studies that cite only the AmphiBac 2023/2025 releases or the GitHub repository are not counted.
+
+Table: [woodhams2015_citers_classified.csv](tables/woodhams2015_citers_classified.csv). Script: [woodhams2015_citation_survey.py](scripts/woodhams2015_citation_survey.py).
+
 ## 9. Recommendations
 
 1. **Report matches as mismatches over the read length, not percent identity.** At 90 bp, 99% means an exact match.
@@ -184,6 +272,8 @@ Tables: [score_diptest.xlsx](tables/score_diptest.xlsx), [diptest_by_group.csv](
     - build InhibitoryStrict against NoEffect isolates as well;
     - ship consensus tables with scores;
     - fix `Assay.Method`.
+12. **Collapse or report ties.** When ≥99% hits disagree, call the feature ambiguous, or report the range of results across shuffled reference orders (see 8f).
+13. **State the matching rule exactly:** tool, identity, coverage, strand, database release and subset. 15 of 57 predictive papers did not.
 
 ## 10. Caveats
 
@@ -207,6 +297,7 @@ Tables: [score_diptest.xlsx](tables/score_diptest.xlsx), [diptest_by_group.csv](
   - multi-copy 16S and Sanger error;
   - duplicate `Isolate.ID` entries;
   - splitting Bd from Bsal inhibition.
+- **Citation survey.** 52 citing papers could be judged only from the abstract. Their full texts (via institutional access) would close the 57–90 range.
 
 ## 12. File index
 
@@ -234,3 +325,7 @@ Tables: [score_diptest.xlsx](tables/score_diptest.xlsx), [diptest_by_group.csv](
 - Round 2: [null/genus](scripts/round2_null_genus_scripts.tar.gz), [phylogenetic signal](scripts/r2_phylo_scripts.tar.gz), [releases](scripts/AmphiBac_round2_release_scripts.tar.gz), [bullfrog Bd](scripts/bd_validation.py)
 - SERDP: [SERDP](scripts/SERDP_scripts.tar.gz)
 - Round 3: [prediction grid](scripts/r3_prediction_grid_scripts.tar.gz), [decay/signal](scripts/r3_decay_signal_scripts.tar.gz), [prospective](scripts/r3_prospective_scripts.tar.gz)
+
+**Worked example and citation survey (8f, 8g)**
+- [fig_tied_feature_walkthrough.png](figures/fig_tied_feature_walkthrough.png), [tied_feature_references.csv](tables/tied_feature_references.csv), [tied_feature_real_runs.csv](tables/tied_feature_real_runs.csv), [tied_feature_frogs.csv](tables/tied_feature_frogs.csv), [tied_feature_walkthrough.py](scripts/tied_feature_walkthrough.py)
+- [woodhams2015_citers_classified.csv](tables/woodhams2015_citers_classified.csv), [woodhams2015_citation_survey.py](scripts/woodhams2015_citation_survey.py)

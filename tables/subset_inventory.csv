@@ -1,0 +1,186 @@
+dataset,set,kind,n_full,n_tested,n_inhibitory,n_inhibitory_strict,n_noeffect,n_facilitating,n_nottested,n_possible_contam,frac_inhibitory_of_tested,n_studies_full,n_studies_tested,hosts,locations,note,n_samples,file
+all,ALL,unrestricted,8739,7873,2831,2273,4397,645,744,122,0.3595833862568271,33,33,salamandra salamandra (694);lithobates catesbeianus (295);boana faber (289);ischnocnema henselii (288);haddadus binotatus (287);notophthalmus viridescens (271),madagascar/nan (3099);panama/nan (1180);usa/Virginia (934);brazil/Sao Paulo (726);germany/nan (694);brazil/nan (391),released FullDatabase,,
+bullfrog,bf_species,host species,295,269,97,63,133,39,26,0,0.36059479553903345,2,2,lithobates catesbeianus (295),usa/Colorado (152);usa/Virginia (143),"L. catesbeianus, any location (Virginia, Colorado)",,
+bullfrog,bf_MA,location (state),137,134,34,24,86,14,3,0,0.2537313432835821,1,1,notophthalmus viridescens (137),usa/MA (137),"State 'MA' (Massachusetts), any host",,
+bullfrog,bf_speciesMA,species+location,0,0,0,0,0,0,0,0,,0,0,,,empty: no Massachusetts bullfrog isolates,,
+bullfrog,bf_genus,genus fallback,528,502,221,146,241,40,26,0,0.4402390438247012,8,8,lithobates catesbeianus (295);rana muscosa (101);lithobates sphenocephalus (73);rana cascadae (42);lithobates clamitans (15);lithobates vibicarius (2),usa/Colorado (152);usa/California (143);usa/Virginia (143);usa/Tennessee (73);usa/New Jersey (15);costa rica/nan (2),"Lithobates + Rana, any location",,
+bullfrog,bf_NE,region fallback,157,154,50,36,90,14,3,0,0.3246753246753247,2,2,notophthalmus viridescens (137);lithobates clamitans (15);hyla andersonii (5),usa/MA (137);usa/New Jersey (20),"US Northeast states; present: MA, New Jersey",,
+serdp,serdp_LISP_species,host species,73,73,6,5,67,0,0,0,0.0821917808219178,1,1,lithobates sphenocephalus (73),usa/Tennessee (73),"R. sphenocephala = L. sphenocephalus (LISP_LA, LISP_TN)",,
+serdp,serdp_genus,genus fallback,528,502,221,146,241,40,26,0,0.4402390438247012,8,8,lithobates catesbeianus (295);rana muscosa (101);lithobates sphenocephalus (73);rana cascadae (42);lithobates clamitans (15);lithobates vibicarius (2),usa/Colorado (152);usa/California (143);usa/Virginia (143);usa/Tennessee (73);usa/New Jersey (15);costa rica/nan (2),"Lithobates + Rana (LIPI_PA, LIPI_VT, LIBL_NM, LIPI_Panama; also run for all sites)",,
+serdp,serdp_TN,location (state),73,73,6,5,67,0,0,0,0.0821917808219178,1,1,lithobates sphenocephalus (73),usa/Tennessee (73),Tennessee (LISP_TN),,
+serdp,serdp_Panama,location (country),1180,1150,404,384,642,104,26,4,0.35130434782608694,4,4,craugastor crassidigitus (211);craugastor fitzingeri (173);espadarana prosoblepon (144);agalychnis callidryas (112);dendropsophus ebraccatus (103);atelopus limosus (89),panama/nan (1180),Panama (LIPI_Panama),,
+serdp,serdp_TN_species,species+location,73,73,6,5,67,0,0,0,0.0821917808219178,1,1,lithobates sphenocephalus (73),usa/Tennessee (73),L. sphenocephalus from Tennessee (LISP_TN),,
+serdp,serdp_PA,location (state),0,0,0,0,0,0,0,0,,0,0,,,empty,,
+serdp,serdp_VT,location (state),0,0,0,0,0,0,0,0,,0,0,,,empty,,
+serdp,serdp_NM,location (state),0,0,0,0,0,0,0,0,,0,0,,,empty,,
+serdp,serdp_LA,location (state),0,0,0,0,0,0,0,0,,0,0,,,empty,,
+serdp,serdp_pipiens_species,host species,0,0,0,0,0,0,0,0,,0,0,,,empty: no R./L. pipiens or blairi isolates,,
+meta,H:agalychnis annae,host,18,12,0,0,11,1,6,0,0.0,1,1,agalychnis annae (18),costa rica/nan (18),10 samples,10.0,H_agalychnis_annae
+meta,H:agalychnis callidryas,host,197,185,22,13,113,50,9,3,0.11891891891891893,3,3,agalychnis callidryas (197),panama/nan (112);belize/nan (48);uk/nan (37),41 samples,41.0,H_agalychnis_callidryas
+meta,H:agalychnis lemur,host,9,8,1,1,7,0,1,0,0.125,1,1,agalychnis lemur (9),costa rica/nan (9),12 samples,12.0,H_agalychnis_lemur
+meta,H:aglyptodactylus madagascariensis,host,52,50,28,17,20,2,1,1,0.56,1,1,aglyptodactylus madagascariensis (52),madagascar/nan (52),18 samples,18.0,H_aglyptodactylus_madagascariensis
+meta,H:alytes obstetricans,host,173,159,18,9,129,12,14,0,0.11320754716981132,1,1,alytes obstetricans (173),switzerland/nan (173),114 samples,114.0,H_alytes_obstetricans
+meta,H:anaxyrus americanus,host,270,268,88,79,173,7,2,0,0.3283582089552239,1,1,anaxyrus americanus (270),usa/Virginia (270),15 samples,15.0,H_anaxyrus_americanus
+meta,H:anaxyrus boreas,host,6,6,6,2,0,0,0,0,1.0,1,1,anaxyrus boreas (6),usa/Colorado (6),280 samples,280.0,H_anaxyrus_boreas
+meta,H:anodonthyla boulengeri,host,35,31,8,6,22,1,4,0,0.25806451612903225,1,1,anodonthyla boulengeri (35),madagascar/nan (35),27 samples,27.0,H_anodonthyla_boulengeri
+meta,H:blommersia blommersae,host,93,89,29,25,59,1,4,0,0.3258426966292135,1,1,blommersia blommersae (93),madagascar/nan (93),21 samples,21.0,H_blommersia_blommersae
+meta,H:boophis albilabris,host,43,40,8,6,31,1,3,0,0.2,1,1,boophis albilabris (43),madagascar/nan (43),4 samples,4.0,H_boophis_albilabris
+meta,H:boophis ankaratra,host,9,9,2,1,7,0,0,0,0.2222222222222222,1,1,boophis ankaratra (9),madagascar/nan (9),2 samples,2.0,H_boophis_ankaratra
+meta,H:boophis bottae,host,19,18,9,8,9,0,1,0,0.5,1,1,boophis bottae (19),madagascar/nan (19),3 samples,3.0,H_boophis_bottae
+meta,H:boophis elenae,host,35,32,14,11,18,0,3,0,0.4375,1,1,boophis elenae (35),madagascar/nan (35),3 samples,3.0,H_boophis_elenae
+meta,H:boophis guibei,host,61,58,25,19,31,2,3,0,0.43103448275862066,1,1,boophis guibei (61),madagascar/nan (61),11 samples,11.0,H_boophis_guibei
+meta,H:boophis luteus,host,17,17,7,5,10,0,0,0,0.4117647058823529,1,1,boophis luteus (17),madagascar/nan (17),7 samples,7.0,H_boophis_luteus
+meta,H:boophis madagascariensis,host,54,51,26,22,22,3,3,0,0.5098039215686274,1,1,boophis madagascariensis (54),madagascar/nan (54),56 samples,56.0,H_boophis_madagascariensis
+meta,H:boophis marojezensis,host,8,7,2,2,5,0,1,0,0.2857142857142857,1,1,boophis marojezensis (8),madagascar/nan (8),2 samples,2.0,H_boophis_marojezensis
+meta,H:boophis microtympanum,host,1,1,1,0,0,0,0,0,1.0,1,1,boophis microtympanum (1),madagascar/nan (1),19 samples,19.0,H_boophis_microtympanum
+meta,H:boophis picturatus,host,15,13,1,1,12,0,2,0,0.07692307692307693,1,1,boophis picturatus (15),madagascar/nan (15),7 samples,7.0,H_boophis_picturatus
+meta,H:boophis pyrrhus,host,100,96,20,14,69,7,2,2,0.20833333333333334,1,1,boophis pyrrhus (100),madagascar/nan (100),17 samples,17.0,H_boophis_pyrrhus
+meta,H:boophis rappiodes,host,5,5,1,0,4,0,0,0,0.2,1,1,boophis rappiodes (5),madagascar/nan (5),8 samples,8.0,H_boophis_rappiodes
+meta,H:boophis rhodoscelis,host,14,14,9,8,5,0,0,0,0.6428571428571429,1,1,boophis rhodoscelis (14),madagascar/nan (14),5 samples,5.0,H_boophis_rhodoscelis
+meta,H:boophis roseipalmatus,host,26,25,8,5,16,1,1,0,0.32,1,1,boophis roseipalmatus (26),madagascar/nan (26),10 samples,10.0,H_boophis_roseipalmatus
+meta,H:boophis tasymena,host,46,43,11,9,31,1,3,0,0.2558139534883721,1,1,boophis tasymena (46),madagascar/nan (46),8 samples,8.0,H_boophis_tasymena
+meta,H:boophis viridis,host,31,31,6,5,25,0,0,0,0.1935483870967742,1,1,boophis viridis (31),madagascar/nan (31),10 samples,10.0,H_boophis_viridis
+meta,H:boophis williamsi,host,18,17,11,5,5,1,0,1,0.6470588235294118,1,1,boophis williamsi (18),madagascar/nan (18),2 samples,2.0,H_boophis_williamsi
+meta,H:craugastor fitzingeri,host,173,171,62,52,100,9,1,1,0.36257309941520466,2,2,craugastor fitzingeri (173),panama/nan (173),26 samples,26.0,H_craugastor_fitzingeri
+meta,H:craugastor ranoides,host,1,1,0,0,1,0,0,0,0.0,1,1,craugastor ranoides (1),costa rica/nan (1),19 samples,19.0,H_craugastor_ranoides
+meta,H:craugastor taurus,host,1,1,0,0,1,0,0,0,0.0,1,1,craugastor taurus (1),costa rica/nan (1),17 samples,17.0,H_craugastor_taurus
+meta,H:dendropsophus ebraccatus,host,103,88,5,4,25,58,15,0,0.056818181818181816,1,1,dendropsophus ebraccatus (103),panama/nan (103),42 samples,42.0,H_dendropsophus_ebraccatus
+meta,H:dyscophus antongilii,host,69,65,31,24,34,0,2,2,0.47692307692307695,1,1,dyscophus antongilii (69),madagascar/nan (69),5 samples,5.0,H_dyscophus_antongilii
+meta,H:espadarana prosoblepon,host,144,144,52,52,92,0,0,0,0.3611111111111111,2,2,espadarana prosoblepon (144),panama/nan (144),7 samples,7.0,H_espadarana_prosoblepon
+meta,H:gephyromantis asper,host,22,21,14,11,7,0,1,0,0.6666666666666666,1,1,gephyromantis asper (22),madagascar/nan (22),12 samples,12.0,H_gephyromantis_asper
+meta,H:gephyromantis decaryi,host,1,1,0,0,1,0,0,0,0.0,1,1,gephyromantis decaryi (1),madagascar/nan (1),2 samples,2.0,H_gephyromantis_decaryi
+meta,H:gephyromantis enki,host,4,4,1,1,3,0,0,0,0.25,1,1,gephyromantis enki (4),madagascar/nan (4),4 samples,4.0,H_gephyromantis_enki
+meta,H:gephyromantis leucomaculatus,host,10,10,7,6,3,0,0,0,0.7,1,1,gephyromantis leucomaculatus (10),madagascar/nan (10),7 samples,7.0,H_gephyromantis_leucomaculatus
+meta,H:gephyromantis luteus,host,27,23,13,11,10,0,4,0,0.5652173913043478,1,1,gephyromantis luteus (27),madagascar/nan (27),3 samples,3.0,H_gephyromantis_luteus
+meta,H:gephyromantis sculpturatus,host,32,29,12,10,17,0,2,1,0.41379310344827586,1,1,gephyromantis sculpturatus (32),madagascar/nan (32),34 samples,34.0,H_gephyromantis_sculpturatus
+meta,H:gephyromantis silvanus,host,45,40,33,29,6,1,0,5,0.825,1,1,gephyromantis silvanus (45),madagascar/nan (45),8 samples,8.0,H_gephyromantis_silvanus
+meta,H:gephyromantis tschenki,host,30,27,8,5,17,2,3,0,0.2962962962962963,1,1,gephyromantis tschenki (30),madagascar/nan (30),13 samples,13.0,H_gephyromantis_tschenki
+meta,H:gephyromantis ventrimaculatus,host,5,5,2,1,3,0,0,0,0.4,1,1,gephyromantis ventrimaculatus (5),madagascar/nan (5),1 samples,1.0,H_gephyromantis_ventrimaculatus
+meta,H:gephyromantis webbi,host,39,37,8,8,28,1,2,0,0.21621621621621623,1,1,gephyromantis webbi (39),madagascar/nan (39),7 samples,7.0,H_gephyromantis_webbi
+meta,H:guibemantis depressiceps,host,25,25,10,8,15,0,0,0,0.4,1,1,guibemantis depressiceps (25),madagascar/nan (25),5 samples,5.0,H_guibemantis_depressiceps
+meta,H:guibemantis liber,host,49,46,13,12,32,1,3,0,0.2826086956521739,1,1,guibemantis liber (49),madagascar/nan (49),16 samples,16.0,H_guibemantis_liber
+meta,H:guibemantis tornieri,host,41,39,16,15,23,0,1,1,0.41025641025641024,1,1,guibemantis tornieri (41),madagascar/nan (41),6 samples,6.0,H_guibemantis_tornieri
+meta,H:heterixalus betsileo,host,228,83,45,28,38,0,145,0,0.5421686746987951,1,1,heterixalus betsileo (228),madagascar/nan (228),41 samples,41.0,H_heterixalus_betsileo
+meta,H:heterixalus madagascariensis,host,1,1,1,1,0,0,0,0,1.0,1,1,heterixalus madagascariensis (1),madagascar/nan (1),2 samples,2.0,H_heterixalus_madagascariensis
+meta,H:heterixalus punctatus,host,8,8,6,5,2,0,0,0,0.75,1,1,heterixalus punctatus (8),madagascar/nan (8),11 samples,11.0,H_heterixalus_punctatus
+meta,H:incilius holdridgei,host,1,1,0,0,0,1,0,0,0.0,1,1,incilius holdridgei (1),costa rica/nan (1),6 samples,6.0,H_incilius_holdridgei
+meta,H:lithobates catesbeianus,host,295,269,97,63,133,39,26,0,0.36059479553903345,2,2,lithobates catesbeianus (295),usa/Colorado (152);usa/Virginia (143),157 samples,157.0,H_lithobates_catesbeianus
+meta,H:lithobates clamitans,host,15,15,11,11,4,0,0,0,0.7333333333333333,1,1,lithobates clamitans (15),usa/New Jersey (15),3 samples,3.0,H_lithobates_clamitans
+meta,H:mantella aurantiaca,host,133,131,39,36,89,3,0,2,0.29770992366412213,1,1,mantella aurantiaca (133),madagascar/nan (133),6 samples,6.0,H_mantella_aurantiaca
+meta,H:mantella baroni,host,4,4,0,0,4,0,0,0,0.0,1,1,mantella baroni (4),madagascar/nan (4),18 samples,18.0,H_mantella_baroni
+meta,H:mantella cowani,host,8,8,2,2,6,0,0,0,0.25,1,1,mantella cowani (8),madagascar/nan (8),8 samples,8.0,H_mantella_cowani
+meta,H:mantella crocea,host,119,113,54,41,57,2,4,2,0.4778761061946903,1,1,mantella crocea (119),madagascar/nan (119),27 samples,27.0,H_mantella_crocea
+meta,H:mantella ebenaui,host,13,11,8,6,3,0,0,2,0.7272727272727273,1,1,mantella ebenaui (13),madagascar/nan (13),3 samples,3.0,H_mantella_ebenaui
+meta,H:mantella expectata,host,30,29,17,17,12,0,1,0,0.5862068965517241,1,1,mantella expectata (30),madagascar/nan (30),7 samples,7.0,H_mantella_expectata
+meta,H:mantella laevigata,host,13,11,4,3,6,1,2,0,0.36363636363636365,1,1,mantella laevigata (13),madagascar/nan (13),5 samples,5.0,H_mantella_laevigata
+meta,H:mantella madagascariensis,host,1,1,0,0,1,0,0,0,0.0,1,1,mantella madagascariensis (1),madagascar/nan (1),1 samples,1.0,H_mantella_madagascariensis
+meta,H:mantella milotympanum,host,6,6,1,1,5,0,0,0,0.16666666666666666,1,1,mantella milotympanum (6),madagascar/nan (6),10 samples,10.0,H_mantella_milotympanum
+meta,H:mantidactylus betsileanus,host,111,105,39,31,63,3,5,1,0.37142857142857144,1,1,mantidactylus betsileanus (111),madagascar/nan (111),51 samples,51.0,H_mantidactylus_betsileanus
+meta,H:mantidactylus biporus,host,5,5,1,1,4,0,0,0,0.2,1,1,mantidactylus biporus (5),madagascar/nan (5),21 samples,21.0,H_mantidactylus_biporus
+meta,H:mantidactylus curtus,host,23,20,5,3,15,0,3,0,0.25,1,1,mantidactylus curtus (23),madagascar/nan (23),2 samples,2.0,H_mantidactylus_curtus
+meta,H:mantidactylus femoralis,host,65,64,22,19,41,1,1,0,0.34375,1,1,mantidactylus femoralis (65),madagascar/nan (65),24 samples,24.0,H_mantidactylus_femoralis
+meta,H:mantidactylus grandidieri,host,24,23,11,6,10,2,0,1,0.4782608695652174,1,1,mantidactylus grandidieri (24),madagascar/nan (24),12 samples,12.0,H_mantidactylus_grandidieri
+meta,H:mantidactylus lugubris,host,16,14,6,5,8,0,2,0,0.42857142857142855,1,1,mantidactylus lugubris (16),madagascar/nan (16),21 samples,21.0,H_mantidactylus_lugubris
+meta,H:mantidactylus majori,host,42,40,13,12,26,1,2,0,0.325,1,1,mantidactylus majori (42),madagascar/nan (42),13 samples,13.0,H_mantidactylus_majori
+meta,H:mantidactylus melanopleura,host,71,70,28,19,41,1,1,0,0.4,1,1,mantidactylus melanopleura (71),madagascar/nan (71),13 samples,13.0,H_mantidactylus_melanopleura
+meta,H:mantidactylus pauliani,host,64,62,24,16,34,4,2,0,0.3870967741935484,1,1,mantidactylus pauliani (64),madagascar/nan (64),7 samples,7.0,H_mantidactylus_pauliani
+meta,H:notophthalmus viridescens,host,271,261,79,65,165,17,10,0,0.30268199233716475,3,3,notophthalmus viridescens (271),usa/MA (137);usa/Virginia (134),18 samples,18.0,H_notophthalmus_viridescens
+meta,H:oophaga pumilio,host,5,5,0,0,5,0,0,0,0.0,1,1,oophaga pumilio (5),costa rica/nan (5),19 samples,19.0,H_oophaga_pumilio
+meta,H:paradoxophyla palmata,host,11,10,2,2,8,0,1,0,0.2,1,1,paradoxophyla palmata (11),madagascar/nan (11),3 samples,3.0,H_paradoxophyla_palmata
+meta,H:platypelis grandis,host,5,5,3,2,2,0,0,0,0.6,1,1,platypelis grandis (5),madagascar/nan (5),6 samples,6.0,H_platypelis_grandis
+meta,H:plethodon cinereus,host,131,131,46,38,85,0,0,0,0.3511450381679389,3,3,plethodon cinereus (131),usa/Virginia (123);usa/Maryland (8),17 samples,17.0,H_plethodon_cinereus
+meta,H:plethodontohyla mihanika,host,5,5,4,2,1,0,0,0,0.8,1,1,plethodontohyla mihanika (5),madagascar/nan (5),4 samples,4.0,H_plethodontohyla_mihanika
+meta,H:plethodontohyla notosticta,host,8,8,3,3,4,1,0,0,0.375,1,1,plethodontohyla notosticta (8),madagascar/nan (8),10 samples,10.0,H_plethodontohyla_notosticta
+meta,H:pseudacris crucifer,host,197,190,88,77,93,9,7,0,0.4631578947368421,1,1,pseudacris crucifer (197),usa/Virginia (197),12 samples,12.0,H_pseudacris_crucifer
+meta,H:ptychadena mascareniensis,host,186,177,71,55,98,8,8,1,0.4011299435028249,1,1,ptychadena mascareniensis (186),madagascar/nan (186),61 samples,61.0,H_ptychadena_mascareniensis
+meta,H:rana cascadae,host,42,42,5,3,37,0,0,0,0.11904761904761904,2,2,rana cascadae (42),usa/California (42),93 samples,93.0,H_rana_cascadae
+meta,H:scaphiophryne marmorata,host,11,11,4,3,7,0,0,0,0.36363636363636365,1,1,scaphiophryne marmorata (11),madagascar/nan (11),2 samples,2.0,H_scaphiophryne_marmorata
+meta,H:spinomantis fimbriatus,host,13,13,9,8,4,0,0,0,0.6923076923076923,1,1,spinomantis fimbriatus (13),madagascar/nan (13),3 samples,3.0,H_spinomantis_fimbriatus
+meta,H:spinomantis peraccae,host,3,3,2,1,1,0,0,0,0.6666666666666666,1,1,spinomantis peraccae (3),madagascar/nan (3),8 samples,8.0,H_spinomantis_peraccae
+meta,H:strabomantis bufoniformis,host,30,30,8,8,21,1,0,0,0.26666666666666666,1,1,strabomantis bufoniformis (30),panama/nan (30),10 samples,10.0,H_strabomantis_bufoniformis
+meta,HC:agalychnis annae|costa rica,hostcountry,18,12,0,0,11,1,6,0,0.0,1,1,agalychnis annae (18),costa rica/nan (18),10 samples,10.0,HC_agalychnis_annae_costa_rica
+meta,HC:agalychnis callidryas|panama,hostcountry,112,100,12,10,69,19,9,3,0.12,1,1,agalychnis callidryas (112),panama/nan (112),41 samples,41.0,HC_agalychnis_callidryas_panama
+meta,HC:agalychnis lemur|costa rica,hostcountry,9,8,1,1,7,0,1,0,0.125,1,1,agalychnis lemur (9),costa rica/nan (9),12 samples,12.0,HC_agalychnis_lemur_costa_rica
+meta,HC:aglyptodactylus madagascariensis|madagascar,hostcountry,52,50,28,17,20,2,1,1,0.56,1,1,aglyptodactylus madagascariensis (52),madagascar/nan (52),18 samples,18.0,HC_aglyptodactylus_madagascariensis_madagascar
+meta,HC:anaxyrus americanus|usa,hostcountry,270,268,88,79,173,7,2,0,0.3283582089552239,1,1,anaxyrus americanus (270),usa/Virginia (270),15 samples,15.0,HC_anaxyrus_americanus_usa
+meta,HC:anaxyrus boreas|usa,hostcountry,6,6,6,2,0,0,0,0,1.0,1,1,anaxyrus boreas (6),usa/Colorado (6),280 samples,280.0,HC_anaxyrus_boreas_usa
+meta,HC:anodonthyla boulengeri|madagascar,hostcountry,35,31,8,6,22,1,4,0,0.25806451612903225,1,1,anodonthyla boulengeri (35),madagascar/nan (35),27 samples,27.0,HC_anodonthyla_boulengeri_madagascar
+meta,HC:blommersia blommersae|madagascar,hostcountry,93,89,29,25,59,1,4,0,0.3258426966292135,1,1,blommersia blommersae (93),madagascar/nan (93),21 samples,21.0,HC_blommersia_blommersae_madagascar
+meta,HC:boophis albilabris|madagascar,hostcountry,43,40,8,6,31,1,3,0,0.2,1,1,boophis albilabris (43),madagascar/nan (43),4 samples,4.0,HC_boophis_albilabris_madagascar
+meta,HC:boophis ankaratra|madagascar,hostcountry,9,9,2,1,7,0,0,0,0.2222222222222222,1,1,boophis ankaratra (9),madagascar/nan (9),2 samples,2.0,HC_boophis_ankaratra_madagascar
+meta,HC:boophis bottae|madagascar,hostcountry,19,18,9,8,9,0,1,0,0.5,1,1,boophis bottae (19),madagascar/nan (19),3 samples,3.0,HC_boophis_bottae_madagascar
+meta,HC:boophis elenae|madagascar,hostcountry,35,32,14,11,18,0,3,0,0.4375,1,1,boophis elenae (35),madagascar/nan (35),3 samples,3.0,HC_boophis_elenae_madagascar
+meta,HC:boophis guibei|madagascar,hostcountry,61,58,25,19,31,2,3,0,0.43103448275862066,1,1,boophis guibei (61),madagascar/nan (61),11 samples,11.0,HC_boophis_guibei_madagascar
+meta,HC:boophis luteus|madagascar,hostcountry,17,17,7,5,10,0,0,0,0.4117647058823529,1,1,boophis luteus (17),madagascar/nan (17),7 samples,7.0,HC_boophis_luteus_madagascar
+meta,HC:boophis madagascariensis|madagascar,hostcountry,54,51,26,22,22,3,3,0,0.5098039215686274,1,1,boophis madagascariensis (54),madagascar/nan (54),56 samples,56.0,HC_boophis_madagascariensis_madagascar
+meta,HC:boophis marojezensis|madagascar,hostcountry,8,7,2,2,5,0,1,0,0.2857142857142857,1,1,boophis marojezensis (8),madagascar/nan (8),2 samples,2.0,HC_boophis_marojezensis_madagascar
+meta,HC:boophis microtympanum|madagascar,hostcountry,1,1,1,0,0,0,0,0,1.0,1,1,boophis microtympanum (1),madagascar/nan (1),19 samples,19.0,HC_boophis_microtympanum_madagascar
+meta,HC:boophis picturatus|madagascar,hostcountry,15,13,1,1,12,0,2,0,0.07692307692307693,1,1,boophis picturatus (15),madagascar/nan (15),7 samples,7.0,HC_boophis_picturatus_madagascar
+meta,HC:boophis pyrrhus|madagascar,hostcountry,100,96,20,14,69,7,2,2,0.20833333333333334,1,1,boophis pyrrhus (100),madagascar/nan (100),17 samples,17.0,HC_boophis_pyrrhus_madagascar
+meta,HC:boophis rappiodes|madagascar,hostcountry,5,5,1,0,4,0,0,0,0.2,1,1,boophis rappiodes (5),madagascar/nan (5),8 samples,8.0,HC_boophis_rappiodes_madagascar
+meta,HC:boophis rhodoscelis|madagascar,hostcountry,14,14,9,8,5,0,0,0,0.6428571428571429,1,1,boophis rhodoscelis (14),madagascar/nan (14),5 samples,5.0,HC_boophis_rhodoscelis_madagascar
+meta,HC:boophis roseipalmatus|madagascar,hostcountry,26,25,8,5,16,1,1,0,0.32,1,1,boophis roseipalmatus (26),madagascar/nan (26),10 samples,10.0,HC_boophis_roseipalmatus_madagascar
+meta,HC:boophis tasymena|madagascar,hostcountry,46,43,11,9,31,1,3,0,0.2558139534883721,1,1,boophis tasymena (46),madagascar/nan (46),8 samples,8.0,HC_boophis_tasymena_madagascar
+meta,HC:boophis viridis|madagascar,hostcountry,31,31,6,5,25,0,0,0,0.1935483870967742,1,1,boophis viridis (31),madagascar/nan (31),10 samples,10.0,HC_boophis_viridis_madagascar
+meta,HC:boophis williamsi|madagascar,hostcountry,18,17,11,5,5,1,0,1,0.6470588235294118,1,1,boophis williamsi (18),madagascar/nan (18),2 samples,2.0,HC_boophis_williamsi_madagascar
+meta,HC:craugastor fitzingeri|panama,hostcountry,173,171,62,52,100,9,1,1,0.36257309941520466,2,2,craugastor fitzingeri (173),panama/nan (173),26 samples,26.0,HC_craugastor_fitzingeri_panama
+meta,HC:craugastor ranoides|costa rica,hostcountry,1,1,0,0,1,0,0,0,0.0,1,1,craugastor ranoides (1),costa rica/nan (1),19 samples,19.0,HC_craugastor_ranoides_costa_rica
+meta,HC:craugastor taurus|costa rica,hostcountry,1,1,0,0,1,0,0,0,0.0,1,1,craugastor taurus (1),costa rica/nan (1),17 samples,17.0,HC_craugastor_taurus_costa_rica
+meta,HC:dendropsophus ebraccatus|panama,hostcountry,103,88,5,4,25,58,15,0,0.056818181818181816,1,1,dendropsophus ebraccatus (103),panama/nan (103),42 samples,42.0,HC_dendropsophus_ebraccatus_panama
+meta,HC:dyscophus antongilii|madagascar,hostcountry,69,65,31,24,34,0,2,2,0.47692307692307695,1,1,dyscophus antongilii (69),madagascar/nan (69),5 samples,5.0,HC_dyscophus_antongilii_madagascar
+meta,HC:espadarana prosoblepon|panama,hostcountry,144,144,52,52,92,0,0,0,0.3611111111111111,2,2,espadarana prosoblepon (144),panama/nan (144),7 samples,7.0,HC_espadarana_prosoblepon_panama
+meta,HC:gephyromantis asper|madagascar,hostcountry,22,21,14,11,7,0,1,0,0.6666666666666666,1,1,gephyromantis asper (22),madagascar/nan (22),12 samples,12.0,HC_gephyromantis_asper_madagascar
+meta,HC:gephyromantis decaryi|madagascar,hostcountry,1,1,0,0,1,0,0,0,0.0,1,1,gephyromantis decaryi (1),madagascar/nan (1),2 samples,2.0,HC_gephyromantis_decaryi_madagascar
+meta,HC:gephyromantis enki|madagascar,hostcountry,4,4,1,1,3,0,0,0,0.25,1,1,gephyromantis enki (4),madagascar/nan (4),4 samples,4.0,HC_gephyromantis_enki_madagascar
+meta,HC:gephyromantis leucomaculatus|madagascar,hostcountry,10,10,7,6,3,0,0,0,0.7,1,1,gephyromantis leucomaculatus (10),madagascar/nan (10),7 samples,7.0,HC_gephyromantis_leucomaculatus_madagascar
+meta,HC:gephyromantis luteus|madagascar,hostcountry,27,23,13,11,10,0,4,0,0.5652173913043478,1,1,gephyromantis luteus (27),madagascar/nan (27),3 samples,3.0,HC_gephyromantis_luteus_madagascar
+meta,HC:gephyromantis sculpturatus|madagascar,hostcountry,32,29,12,10,17,0,2,1,0.41379310344827586,1,1,gephyromantis sculpturatus (32),madagascar/nan (32),34 samples,34.0,HC_gephyromantis_sculpturatus_madagascar
+meta,HC:gephyromantis silvanus|madagascar,hostcountry,45,40,33,29,6,1,0,5,0.825,1,1,gephyromantis silvanus (45),madagascar/nan (45),8 samples,8.0,HC_gephyromantis_silvanus_madagascar
+meta,HC:gephyromantis tschenki|madagascar,hostcountry,30,27,8,5,17,2,3,0,0.2962962962962963,1,1,gephyromantis tschenki (30),madagascar/nan (30),13 samples,13.0,HC_gephyromantis_tschenki_madagascar
+meta,HC:gephyromantis ventrimaculatus|madagascar,hostcountry,5,5,2,1,3,0,0,0,0.4,1,1,gephyromantis ventrimaculatus (5),madagascar/nan (5),1 samples,1.0,HC_gephyromantis_ventrimaculatus_madagascar
+meta,HC:gephyromantis webbi|madagascar,hostcountry,39,37,8,8,28,1,2,0,0.21621621621621623,1,1,gephyromantis webbi (39),madagascar/nan (39),7 samples,7.0,HC_gephyromantis_webbi_madagascar
+meta,HC:guibemantis depressiceps|madagascar,hostcountry,25,25,10,8,15,0,0,0,0.4,1,1,guibemantis depressiceps (25),madagascar/nan (25),5 samples,5.0,HC_guibemantis_depressiceps_madagascar
+meta,HC:guibemantis liber|madagascar,hostcountry,49,46,13,12,32,1,3,0,0.2826086956521739,1,1,guibemantis liber (49),madagascar/nan (49),16 samples,16.0,HC_guibemantis_liber_madagascar
+meta,HC:guibemantis tornieri|madagascar,hostcountry,41,39,16,15,23,0,1,1,0.41025641025641024,1,1,guibemantis tornieri (41),madagascar/nan (41),6 samples,6.0,HC_guibemantis_tornieri_madagascar
+meta,HC:heterixalus betsileo|madagascar,hostcountry,228,83,45,28,38,0,145,0,0.5421686746987951,1,1,heterixalus betsileo (228),madagascar/nan (228),41 samples,41.0,HC_heterixalus_betsileo_madagascar
+meta,HC:heterixalus madagascariensis|madagascar,hostcountry,1,1,1,1,0,0,0,0,1.0,1,1,heterixalus madagascariensis (1),madagascar/nan (1),2 samples,2.0,HC_heterixalus_madagascariensis_madagascar
+meta,HC:heterixalus punctatus|madagascar,hostcountry,8,8,6,5,2,0,0,0,0.75,1,1,heterixalus punctatus (8),madagascar/nan (8),11 samples,11.0,HC_heterixalus_punctatus_madagascar
+meta,HC:incilius holdridgei|costa rica,hostcountry,1,1,0,0,0,1,0,0,0.0,1,1,incilius holdridgei (1),costa rica/nan (1),6 samples,6.0,HC_incilius_holdridgei_costa_rica
+meta,HC:lithobates catesbeianus|usa,hostcountry,295,269,97,63,133,39,26,0,0.36059479553903345,2,2,lithobates catesbeianus (295),usa/Colorado (152);usa/Virginia (143),90 samples,90.0,HC_lithobates_catesbeianus_usa
+meta,HC:lithobates clamitans|usa,hostcountry,15,15,11,11,4,0,0,0,0.7333333333333333,1,1,lithobates clamitans (15),usa/New Jersey (15),3 samples,3.0,HC_lithobates_clamitans_usa
+meta,HC:mantella aurantiaca|madagascar,hostcountry,133,131,39,36,89,3,0,2,0.29770992366412213,1,1,mantella aurantiaca (133),madagascar/nan (133),6 samples,6.0,HC_mantella_aurantiaca_madagascar
+meta,HC:mantella baroni|madagascar,hostcountry,4,4,0,0,4,0,0,0,0.0,1,1,mantella baroni (4),madagascar/nan (4),18 samples,18.0,HC_mantella_baroni_madagascar
+meta,HC:mantella cowani|madagascar,hostcountry,8,8,2,2,6,0,0,0,0.25,1,1,mantella cowani (8),madagascar/nan (8),8 samples,8.0,HC_mantella_cowani_madagascar
+meta,HC:mantella crocea|madagascar,hostcountry,119,113,54,41,57,2,4,2,0.4778761061946903,1,1,mantella crocea (119),madagascar/nan (119),27 samples,27.0,HC_mantella_crocea_madagascar
+meta,HC:mantella ebenaui|madagascar,hostcountry,13,11,8,6,3,0,0,2,0.7272727272727273,1,1,mantella ebenaui (13),madagascar/nan (13),3 samples,3.0,HC_mantella_ebenaui_madagascar
+meta,HC:mantella expectata|madagascar,hostcountry,30,29,17,17,12,0,1,0,0.5862068965517241,1,1,mantella expectata (30),madagascar/nan (30),7 samples,7.0,HC_mantella_expectata_madagascar
+meta,HC:mantella laevigata|madagascar,hostcountry,13,11,4,3,6,1,2,0,0.36363636363636365,1,1,mantella laevigata (13),madagascar/nan (13),5 samples,5.0,HC_mantella_laevigata_madagascar
+meta,HC:mantella madagascariensis|madagascar,hostcountry,1,1,0,0,1,0,0,0,0.0,1,1,mantella madagascariensis (1),madagascar/nan (1),1 samples,1.0,HC_mantella_madagascariensis_madagascar
+meta,HC:mantella milotympanum|madagascar,hostcountry,6,6,1,1,5,0,0,0,0.16666666666666666,1,1,mantella milotympanum (6),madagascar/nan (6),10 samples,10.0,HC_mantella_milotympanum_madagascar
+meta,HC:mantidactylus betsileanus|madagascar,hostcountry,111,105,39,31,63,3,5,1,0.37142857142857144,1,1,mantidactylus betsileanus (111),madagascar/nan (111),51 samples,51.0,HC_mantidactylus_betsileanus_madagascar
+meta,HC:mantidactylus biporus|madagascar,hostcountry,5,5,1,1,4,0,0,0,0.2,1,1,mantidactylus biporus (5),madagascar/nan (5),21 samples,21.0,HC_mantidactylus_biporus_madagascar
+meta,HC:mantidactylus curtus|madagascar,hostcountry,23,20,5,3,15,0,3,0,0.25,1,1,mantidactylus curtus (23),madagascar/nan (23),2 samples,2.0,HC_mantidactylus_curtus_madagascar
+meta,HC:mantidactylus femoralis|madagascar,hostcountry,65,64,22,19,41,1,1,0,0.34375,1,1,mantidactylus femoralis (65),madagascar/nan (65),24 samples,24.0,HC_mantidactylus_femoralis_madagascar
+meta,HC:mantidactylus grandidieri|madagascar,hostcountry,24,23,11,6,10,2,0,1,0.4782608695652174,1,1,mantidactylus grandidieri (24),madagascar/nan (24),12 samples,12.0,HC_mantidactylus_grandidieri_madagascar
+meta,HC:mantidactylus lugubris|madagascar,hostcountry,16,14,6,5,8,0,2,0,0.42857142857142855,1,1,mantidactylus lugubris (16),madagascar/nan (16),21 samples,21.0,HC_mantidactylus_lugubris_madagascar
+meta,HC:mantidactylus majori|madagascar,hostcountry,42,40,13,12,26,1,2,0,0.325,1,1,mantidactylus majori (42),madagascar/nan (42),13 samples,13.0,HC_mantidactylus_majori_madagascar
+meta,HC:mantidactylus melanopleura|madagascar,hostcountry,71,70,28,19,41,1,1,0,0.4,1,1,mantidactylus melanopleura (71),madagascar/nan (71),13 samples,13.0,HC_mantidactylus_melanopleura_madagascar
+meta,HC:mantidactylus pauliani|madagascar,hostcountry,64,62,24,16,34,4,2,0,0.3870967741935484,1,1,mantidactylus pauliani (64),madagascar/nan (64),7 samples,7.0,HC_mantidactylus_pauliani_madagascar
+meta,HC:notophthalmus viridescens|usa,hostcountry,271,261,79,65,165,17,10,0,0.30268199233716475,3,3,notophthalmus viridescens (271),usa/MA (137);usa/Virginia (134),18 samples,18.0,HC_notophthalmus_viridescens_usa
+meta,HC:oophaga pumilio|costa rica,hostcountry,5,5,0,0,5,0,0,0,0.0,1,1,oophaga pumilio (5),costa rica/nan (5),19 samples,19.0,HC_oophaga_pumilio_costa_rica
+meta,HC:paradoxophyla palmata|madagascar,hostcountry,11,10,2,2,8,0,1,0,0.2,1,1,paradoxophyla palmata (11),madagascar/nan (11),3 samples,3.0,HC_paradoxophyla_palmata_madagascar
+meta,HC:platypelis grandis|madagascar,hostcountry,5,5,3,2,2,0,0,0,0.6,1,1,platypelis grandis (5),madagascar/nan (5),6 samples,6.0,HC_platypelis_grandis_madagascar
+meta,HC:plethodon cinereus|usa,hostcountry,131,131,46,38,85,0,0,0,0.3511450381679389,3,3,plethodon cinereus (131),usa/Virginia (123);usa/Maryland (8),17 samples,17.0,HC_plethodon_cinereus_usa
+meta,HC:plethodontohyla mihanika|madagascar,hostcountry,5,5,4,2,1,0,0,0,0.8,1,1,plethodontohyla mihanika (5),madagascar/nan (5),4 samples,4.0,HC_plethodontohyla_mihanika_madagascar
+meta,HC:plethodontohyla notosticta|madagascar,hostcountry,8,8,3,3,4,1,0,0,0.375,1,1,plethodontohyla notosticta (8),madagascar/nan (8),10 samples,10.0,HC_plethodontohyla_notosticta_madagascar
+meta,HC:pseudacris crucifer|usa,hostcountry,197,190,88,77,93,9,7,0,0.4631578947368421,1,1,pseudacris crucifer (197),usa/Virginia (197),12 samples,12.0,HC_pseudacris_crucifer_usa
+meta,HC:ptychadena mascareniensis|madagascar,hostcountry,186,177,71,55,98,8,8,1,0.4011299435028249,1,1,ptychadena mascareniensis (186),madagascar/nan (186),53 samples,53.0,HC_ptychadena_mascareniensis_madagascar
+meta,HC:rana cascadae|usa,hostcountry,42,42,5,3,37,0,0,0,0.11904761904761904,2,2,rana cascadae (42),usa/California (42),93 samples,93.0,HC_rana_cascadae_usa
+meta,HC:scaphiophryne marmorata|madagascar,hostcountry,11,11,4,3,7,0,0,0,0.36363636363636365,1,1,scaphiophryne marmorata (11),madagascar/nan (11),2 samples,2.0,HC_scaphiophryne_marmorata_madagascar
+meta,HC:spinomantis fimbriatus|madagascar,hostcountry,13,13,9,8,4,0,0,0,0.6923076923076923,1,1,spinomantis fimbriatus (13),madagascar/nan (13),3 samples,3.0,HC_spinomantis_fimbriatus_madagascar
+meta,HC:spinomantis peraccae|madagascar,hostcountry,3,3,2,1,1,0,0,0,0.6666666666666666,1,1,spinomantis peraccae (3),madagascar/nan (3),8 samples,8.0,HC_spinomantis_peraccae_madagascar
+meta,HC:strabomantis bufoniformis|panama,hostcountry,30,30,8,8,21,1,0,0,0.26666666666666666,1,1,strabomantis bufoniformis (30),panama/nan (30),10 samples,10.0,HC_strabomantis_bufoniformis_panama
+meta,C:costa rica,country,37,30,2,2,25,3,7,0,0.06666666666666667,1,1,agalychnis annae (18);agalychnis lemur (9);oophaga pumilio (5);lithobates vibicarius (2);craugastor taurus (1);incilius holdridgei (1),costa rica/nan (37),107 samples,107.0,C_costa_rica
+meta,C:madagascar,country,3099,2665,1046,824,1555,64,410,24,0.3924953095684803,1,1,heterixalus betsileo (228);ptychadena mascareniensis (186);mantella aurantiaca (133);mantella crocea (119);boophis goudoti (117);mantidactylus betsileanus (111),madagascar/nan (3099),1229 samples,1229.0,C_madagascar
+meta,C:panama,country,1180,1150,404,384,642,104,26,4,0.35130434782608694,4,4,craugastor crassidigitus (211);craugastor fitzingeri (173);espadarana prosoblepon (144);agalychnis callidryas (112);dendropsophus ebraccatus (103);atelopus limosus (89),panama/nan (1180),138 samples,138.0,C_panama
+meta,C:usa,country,1546,1500,619,478,809,72,46,0,0.4126666666666667,15,15,lithobates catesbeianus (295);notophthalmus viridescens (271);anaxyrus americanus (270);pseudacris crucifer (197);plethodon cinereus (131);rana muscosa (101),usa/Virginia (934);usa/California (168);usa/Colorado (158);usa/MA (137);usa/Tennessee (73);usa/Maryland (56),639 samples,639.0,C_usa

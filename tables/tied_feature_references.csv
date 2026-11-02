@@ -1,0 +1,14 @@
+target,id,mism,tl,strand,Host.Species,Country,State,Reference,Isolate.ID,Proportional.Growth.Bd,AntiFungal.Function.with.AP.function,Assay.Method,score,in_Inhibitory,length,kmer_shared,wins_of_1001
+AmphiBac_5440,100.0,0,1270,-,Lithobates.catesbeianus,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,BFE14C,7.00E-02,Inhibitory,96.well.CFS.assay,93.0,True,1270,143,347
+AmphiBac_5442,100.0,0,1270,-,Lithobates.catesbeianus,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,BFE14H,0.83,NoEffect,96.well.CFS.assay,17.000000000000004,False,1270,143,330
+AmphiBac_5491,100.0,0,1388,+,Lithobates.catesbeianus,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,BFE24H,0.23,NoEffect,96.well.CFS.assay,77.0,False,1388,143,0
+AmphiBac_5506,100.0,0,1371,+,Lithobates.catesbeianus,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,BFE32C,0.15,Inhibitory,96.well.CFS.assay,85.0,True,1371,143,0
+AmphiBac_5507,100.0,0,1376,+,Lithobates.catesbeianus,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,BFE40A,0.17,Inhibitory,96.well.CFS.assay,83.0,True,1376,143,0
+AmphiBac_5563,100.0,0,1349,+,Lithobates.catesbeianus,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,BFE8A,0.89,NoEffect,96.well.CFS.assay,10.999999999999998,False,1349,143,324
+AmphiBac_1576,99.3,1,1356,+,Rana.muscosa,USA,California,"10.1016/j.biocon.2007.05.004,10.1016/j.biocon.2009.11.015",645K,,Inhibitory,Agar.plate.assay,,True,1356,135,0
+AmphiBac_6541,99.3,1,1273,-,Notophthalmus.viridescens,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,PRE12a,1.12,NoEffect,96.well.CFS.assay,-12.00000000000001,False,1273,135,0
+AmphiBac_6546,99.3,1,1196,-,Notophthalmus.viridescens,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,PRE12f,6.00E-02,Inhibitory,96.well.CFS.assay,94.0,True,1196,135,0
+AmphiBac_6552,99.3,1,1392,-,Notophthalmus.viridescens,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,PRE14B,1.06,NoEffect,96.well.CFS.assay,-6.000000000000005,False,1392,135,0
+AmphiBac_6569,99.3,1,1275,-,Notophthalmus.viridescens,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,PRE19a,1.03,NoEffect,96.well.CFS.assay,-3.0000000000000027,False,1275,135,0
+AmphiBac_6598,99.3,1,1397,-,Notophthalmus.viridescens,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,PRE25A,1.04,NoEffect,96.well.CFS.assay,-4.0000000000000036,False,1397,135,0
+AmphiBac_6606,99.3,1,1385,+,Notophthalmus.viridescens,USA,Virginia,10.1128/AEM.01486-15 - Bd inhibition data not published as of Feb. 2017,PRE29B,1.03,NoEffect,96.well.CFS.assay,-3.0000000000000027,False,1385,135,0
