@@ -11,6 +11,39 @@ The AmphiBac database is internally consistent. The common way it is used, howev
 5. **No metric tracked Bd infection or load** in either Bd dataset, once site and season (or treatment) were accounted for. A naive analysis of the leopard-frog data does find a significant association, but in the *opposite* direction, and it is driven by site.
 6. **The practice is common and inconsistent.** At least 57 of the 116 citing papers whose methods could be read matched their own sequences to the database. Their matching rules range from genus name only to 100% identity.
 
+## Cohen's K use
+
+Cohen's κ is the score I used throughout for one question: does a 16S match predict an isolate's own lab-measured Bd label better than chance would?
+
+What is being compared
+
+Every κ in the reports comes from the same isolate-level test:
+
+Take one AmphiBac isolate whose Bd function was measured, so its label (Inhibitory or not) is known.
+Remove it, and in the stricter version also every other isolate from the same study.
+Cut its 16S down to the amplicon fragment being tested (for example 120 bp of V4) and run it against the remaining database with the rule being tested.
+The rule gives a prediction: "inhibitory" or "not inhibitory".
+Compare the prediction with the isolate's real label.
+Repeating this for about 5,000–6,600 isolates gives a 2 × 2 table of predicted against measured labels. κ summarises how well they agree.
+
+The rules compared:
+
+R1: the label of vsearch's default top hit.
+R2: any hit to the Inhibitory subset, which is the pipeline's logic.
+R3: any hit to the InhibitoryStrict subset.
+R4: the majority label among all ≥99% hits.
+Genus baseline: the majority label of the isolate's genus.
+Why κ and not plain accuracy
+
+κ asks how much better the agreement is than you would get by chance, given how often each label occurs:
+
+κ = (observed agreement − agreement expected by chance) / (1 − agreement expected by chance)
+
+κ = 0: no better than guessing with the same label frequencies.
+κ = 1: perfect agreement.
+κ < 0: worse than chance.
+Plain accuracy or sensitivity is misleading here because the pipeline calls almost everything inhibitory. The 120 bp, 99%, R2 run shows this (one isolate held out at a time):
+
 ## 1. Workflow and data tested
 
 **The workflow.** We tested the `tools/antifungal_predictions_pipeline.py` script and the older `scripts/Antifungal_Predictions_conda.sh` from github.com/AmphiBac/AmphiBac-Database. Both run:
