@@ -9,3 +9,4 @@ Not included: raw community data (meta-analysis, bullfrog and SERDP tables), whi
 Tools: vsearch 2.32.0, Python 3.11 (pandas, numpy, scipy, statsmodels, scikit-learn, diptest), FastTree/mafft and R for phylogenetic signal.
 Added in this version: section 8f (one tied SERDP read traced through 1,001 real vsearch runs) and 8g (survey of 204 works citing Woodhams et al. 2015 for predictive use).
 Also added: section 8h (Inhibitory-cutoff sweep 0-95, incl. 50 as the single-dose IC50 analogue).
+Also added: section 8i (paired culture + amplicon studies: AmphiBac calls vs each study's own isolates, study held out).
