@@ -1,0 +1,472 @@
+path	bytes	md5
+analysis/AmphiBac_paired_study_report.md	5373	
+analysis/paired_analysis_scripts.tar.gz	15228	
+analysis/paired_asv_agreement.xlsx	432693	
+analysis/paired_culture_amplicon_studies.xlsx	61693	
+asv_tables/tables_pkg/README_paired.txt	8349	
+asv_tables/tables_pkg/bletz2018/asv_table.tsv	9340461	
+asv_tables/tables_pkg/bletz2018/asvs.fa	2893630	
+asv_tables/tables_pkg/bletz2018/filter_counts.tsv	22630	
+asv_tables/tables_pkg/bletz2018/map.log	14550	
+asv_tables/tables_pkg/bletz2018/per_asv_calls.tsv	4254818	
+asv_tables/tables_pkg/bletz2018/step23_info.tsv	293	
+asv_tables/tables_pkg/bletz2018/uchime.log	10146	
+asv_tables/tables_pkg/inventory.tsv	2522	
+asv_tables/tables_pkg/molecol2019/asv_table.tsv	2722080	
+asv_tables/tables_pkg/molecol2019/asvs.fa	1649313	
+asv_tables/tables_pkg/molecol2019/map.log	14749	
+asv_tables/tables_pkg/molecol2019/per_asv_calls.tsv	2384546	
+asv_tables/tables_pkg/molecol2019/prep_stats.tsv	2458	
+asv_tables/tables_pkg/molecol2019/step23_info.tsv	289	
+asv_tables/tables_pkg/molecol2019/uchime.log	10342	
+asv_tables/tables_pkg/rebollar2019/asv_table.tsv	2878900	
+asv_tables/tables_pkg/rebollar2019/asvs.fa	3445144	
+asv_tables/tables_pkg/rebollar2019/barcode_ranked_top500.tsv	6711	
+asv_tables/tables_pkg/rebollar2019/barcode_table.tsv	1694	
+asv_tables/tables_pkg/rebollar2019/filter_counts.tsv	661	
+asv_tables/tables_pkg/rebollar2019/map.log	14853	
+asv_tables/tables_pkg/rebollar2019/per_asv_calls.tsv	4980316	
+asv_tables/tables_pkg/rebollar2019/step23_info.tsv	296	
+asv_tables/tables_pkg/rebollar2019/uchime.log	10448	
+asv_tables/tables_pkg/walke2015/asv_table.tsv	303516	
+asv_tables/tables_pkg/walke2015/asvs.fa	2421662	
+asv_tables/tables_pkg/walke2015/filter.log	216	
+asv_tables/tables_pkg/walke2015/map.log	14550	
+asv_tables/tables_pkg/walke2015/per_asv_calls.tsv	3497237	
+asv_tables/tables_pkg/walke2015/step23_info.tsv	294	
+asv_tables/tables_pkg/walke2015/uchime.log	10145	
+bletz2018/README.txt	2546	
+bletz2018/RSPB-2018-0758_Bletz_etal_Dryad_AllData.xlsx	4280058	
+bletz2018/ena_filereport.tsv	48583	
+bletz2018/isolate_assays.csv	436457	
+bletz2018/isolates.fasta	544138	
+bletz2018/isolates_genbank.csv	657439	
+bletz2018/isolates_genbank.gb	1825169	
+bletz2018/isolates_genbank_skin.fasta	529324	
+bletz2018/isolates_liver_untested.fasta	27834	
+bletz2018/reads/SRR7410625.fastq.gz	7739393	6ae593838d8a239d1ce57c751298a81a
+bletz2018/reads/SRR7410626.fastq.gz	6205407	ba3f1276635b68b94dfcee4f7376602d
+bletz2018/reads/SRR7410627.fastq.gz	3851390	c3c4c3a296519e906f94f1cdf5931ba4
+bletz2018/reads/SRR7410628.fastq.gz	6080672	679dea67b4fc95a64c754861d3cb8763
+bletz2018/reads/SRR7410629.fastq.gz	2996516	fdc11ff8dabb75b3dd2a10c69c410142
+bletz2018/reads/SRR7410630.fastq.gz	10244292	3c378f064fb75c42f574d64be2d7fb5d
+bletz2018/reads/SRR7410631.fastq.gz	4254493	91814c25591ab38ee86cb640c618c70e
+bletz2018/reads/SRR7410632.fastq.gz	1833256	fdf70965c4b0d13ec3f22e5a464c85f3
+bletz2018/reads/SRR7410633.fastq.gz	5323645	bfc4227c1650987a00228dbc69c550bc
+bletz2018/reads/SRR7410634.fastq.gz	6098259	beb66dea52ba7f92dfe179348fd9429d
+bletz2018/reads/SRR7410635.fastq.gz	4373371	bbd0424320182ebd8c7b00a7a0a6afcf
+bletz2018/reads/SRR7410636.fastq.gz	6817088	4237fb8411ce9891e59b384241195ff0
+bletz2018/reads/SRR7410637.fastq.gz	3941061	b68b2ca753a799dc0dda6cd4da7018e6
+bletz2018/reads/SRR7410638.fastq.gz	8876088	f3cec10e74dbe86ebd4e4d3c5d9817fd
+bletz2018/reads/SRR7410639.fastq.gz	3055860	552a8577ebb51286be965e16a8f469e9
+bletz2018/reads/SRR7410640.fastq.gz	6665347	391055eae90beafbda75fb41f3b4dc6a
+bletz2018/reads/SRR7410641.fastq.gz	3235029	0e5ec5541dbb0b74ad51fe6df19de313
+bletz2018/reads/SRR7410642.fastq.gz	6440306	9a9c393c3dc06b6aca3f7f445de1091b
+bletz2018/reads/SRR7410643.fastq.gz	2421600	a07bc0dc7c87fff1d39150a716c66785
+bletz2018/reads/SRR7410644.fastq.gz	8251601	4fae7345688972a6823892d5885203c2
+bletz2018/reads/SRR7410645.fastq.gz	6658055	c66f6d088c6ae8cbb07583021fa631e9
+bletz2018/reads/SRR7410646.fastq.gz	4860956	1b156df532bf492dc1f07ea9e6abc20f
+bletz2018/reads/SRR7410647.fastq.gz	6659918	bed3056fe883b6d59fd141d0ed6f0412
+bletz2018/reads/SRR7410648.fastq.gz	5866242	85b416eba6336a2095220ec3e96db36c
+bletz2018/reads/SRR7614769.fastq.gz	838405	ac97f343ee423f549a15eff00dd694e3
+bletz2018/reads/SRR7614770.fastq.gz	5950980	c049e8faa0337967154eb31329045590
+bletz2018/reads/SRR7614771.fastq.gz	6508487	f64e55a668e190c6e0322b4dd80692b7
+bletz2018/reads/SRR7614772.fastq.gz	12425146	8ec825c389e5621881e328f2682ff0d4
+bletz2018/reads/SRR7614773.fastq.gz	2601548	aee2c1b684e26c6f811fc9805bf449fe
+bletz2018/reads/SRR7614774.fastq.gz	5161396	5f48a9cf38938b09cfe4ef871e3330c2
+bletz2018/reads/SRR7614775.fastq.gz	8294708	0307deb58e9eda0647c123635baa5f24
+bletz2018/reads/SRR7614776.fastq.gz	7664368	7124ff7a1b888b2c3e826d7ab668e833
+bletz2018/reads/SRR7614777.fastq.gz	2456243	4f0314fa383c110d4d0220fe9214cb82
+bletz2018/reads/SRR7614778.fastq.gz	1325590	8feaf0974c6db13c25e9fbcca989dace
+bletz2018/reads/SRR7614779.fastq.gz	1909204	9e5102fef8b2d33c54dc5fa9454686f7
+bletz2018/reads/SRR7614780.fastq.gz	1473719	870913ff7a25509a843056f1651acc27
+bletz2018/reads/SRR7614781.fastq.gz	2315406	d8588a60246bc99900a890f6c80e5d96
+bletz2018/reads/SRR7614782.fastq.gz	3128493	c4649a8737f530f127b6c2a31972b38b
+bletz2018/reads/SRR7614783.fastq.gz	5401692	a4f4acfb1fa7976eee930fd713bb07e5
+bletz2018/reads/SRR7614784.fastq.gz	4370563	8da300245ec5fdeb566e513d2818b89a
+bletz2018/reads/SRR7614785.fastq.gz	3848336	c4d1d40d055adc9be35fec0b3bb4f4d5
+bletz2018/reads/SRR7614786.fastq.gz	1257857	4b9ead5ee0e4ee3b27c411d19f69465a
+bletz2018/reads/SRR7614787.fastq.gz	4097795	1df43176238b874c9011129525a9620f
+bletz2018/reads/SRR7614788.fastq.gz	3674861	c3b247dbcf377c0eeb1523701426355c
+bletz2018/reads/SRR7614789.fastq.gz	2792422	defb4b2ba92a670d79ac0d00c28381d0
+bletz2018/reads/SRR7614790.fastq.gz	2733298	145221f339987ff594a8b9d440382e26
+bletz2018/reads/SRR7614791.fastq.gz	4643733	5e7166b9ef6fd62b44514ee392b3b3ee
+bletz2018/reads/SRR7614792.fastq.gz	5123319	b3810d65a625a492b144ea7834d6d21b
+bletz2018/reads/SRR7614793.fastq.gz	2246007	3bb2438b6551b2e06a2195345cbaa8ff
+bletz2018/reads/SRR7614794.fastq.gz	1287250	6ee59f016b015148efb794079a702936
+bletz2018/reads/SRR7614795.fastq.gz	2955404	f809d3b719b094d754d89e38c623cbb3
+bletz2018/reads/SRR7614796.fastq.gz	2407176	d44dae1085119f9b29011884e2640f26
+bletz2018/reads/SRR7614797.fastq.gz	1491854	c78238410ef21c9d473a231dd0dfc656
+bletz2018/reads/SRR7614798.fastq.gz	8450809	5e162b24878ecb094ec4f57cd8f722bd
+bletz2018/reads/SRR7614799.fastq.gz	8817137	f3a0d324a70d0e75b537c97ea042894a
+bletz2018/reads/SRR7614800.fastq.gz	9686699	3a65efcfe88bb8bee92149c713ddc16e
+bletz2018/reads/SRR7614801.fastq.gz	7284155	ffa3b4dcf1151e5a62023b726e1ddf4f
+bletz2018/reads/SRR7614802.fastq.gz	3706466	620ed304aaefd58c61ec3b2f21a79c74
+bletz2018/reads/SRR7614803.fastq.gz	6311179	8bbee58a2ac1e7cb0f6c1cbdbbc9f899
+bletz2018/reads/SRR7614804.fastq.gz	2624069	4251447e47008818c0b9b6b8d8b5085b
+bletz2018/reads/SRR7614805.fastq.gz	4879626	405ca400f84d95bb88174d498fd7d245
+bletz2018/reads/SRR7614806.fastq.gz	1922611	e4d0f2b42d938b94aca69cf2bf3290e2
+bletz2018/reads/SRR7614807.fastq.gz	2439959	78d2867b4b26d573fcbe916be7e897b7
+bletz2018/reads/SRR7614808.fastq.gz	2203122	ca205d85a1907a5998a2967bb2f64c3f
+bletz2018/reads/SRR7614809.fastq.gz	3180193	7fbfbc4215acc70483fbb122d420d66b
+bletz2018/reads/SRR7614810.fastq.gz	2339318	c7757c4fa82deede81511062695f0eb2
+bletz2018/reads/SRR7614811.fastq.gz	1100331	24c5cc4de45d292a7135bbf2b9c2dc93
+bletz2018/reads/SRR7614812.fastq.gz	960580	293aa5c55ef2e1514e717fc035f16b34
+bletz2018/reads/SRR7614813.fastq.gz	1578208	9979e0378a1e331dc77944db8993ac15
+bletz2018/reads/SRR7614814.fastq.gz	753314	3e72bd58d40e7304efee033a7f3403ef
+bletz2018/reads/SRR7614815.fastq.gz	797175	8640ccae610f31d83196ef39908df815
+bletz2018/reads/SRR7614816.fastq.gz	3311361	273664aebdb5850c8df6f8a555fc21fd
+bletz2018/reads/SRR7614817.fastq.gz	11969924	daf7ac0935b4e450e57564ff18432a18
+bletz2018/reads/SRR7614818.fastq.gz	1157038	42760ac65718aeade58e72dee3c1d2fb
+bletz2018/reads/SRR7614819.fastq.gz	9692943	b05b8b3d7f0dae2dcfb15d2f0c12370f
+bletz2018/reads/SRR7614820.fastq.gz	7067309	b131fbd31ce209ca84d40628f79d3ad0
+bletz2018/reads/SRR7614821.fastq.gz	6340093	43366a73c12d8c2d3d0a17ce583dbab3
+bletz2018/reads/SRR7614822.fastq.gz	3970886	06dfa45dc403a9e8ce66b2f3f6153e4f
+bletz2018/reads/SRR7614823.fastq.gz	1689504	8c40e4df4f345b2b37df20bc8e639efe
+bletz2018/reads/SRR7614824.fastq.gz	2059365	da19ecbdc8cac74d764ff83508c0cf59
+bletz2018/reads/SRR7614825.fastq.gz	1749409	00622602a617f90b1c8a7fe4c23d822e
+bletz2018/reads/SRR7614826.fastq.gz	1541982	7db182172e27ca8576c48128e11ff088
+bletz2018/reads/SRR7614827.fastq.gz	2177022	ef61e865466ace4212774a9769a54241
+bletz2018/reads/SRR7614828.fastq.gz	13181459	9bfa1d321cda435f21773425be473876
+bletz2018/reads/SRR7614829.fastq.gz	1141556	3d1b12826f5223adb857e750965d7102
+bletz2018/reads/SRR7614830.fastq.gz	2983628	a736951f21886bb712de6191142799a3
+bletz2018/reads/SRR7614831.fastq.gz	2184228	8bb0f7bc0a1b7925351f11835134c92b
+bletz2018/reads/SRR7614832.fastq.gz	2207292	c7e3e580cff8d2f5880029399050e8f6
+bletz2018/reads/SRR7614833.fastq.gz	1348058	873b5ce254bfed066c184768438b06c2
+bletz2018/reads/SRR7614834.fastq.gz	2336255	bf3720a4c0cbc9aa536512c1742dde09
+bletz2018/reads/SRR7614835.fastq.gz	2110322	865881cf911af677aed232f44ad7fe29
+bletz2018/reads/SRR7614836.fastq.gz	5191584	b50eb45d2ed54341d007735cc384ee6c
+bletz2018/reads/SRR7614837.fastq.gz	1677688	5c72881cfdb8a925c1b32bafc102d2ba
+bletz2018/reads/SRR7614838.fastq.gz	2657637	15af19afabad25ad551d089a44ac6c74
+bletz2018/reads/SRR7614839.fastq.gz	5614103	2f0eace2d2c2ff49e045ee424017ddbd
+bletz2018/reads/SRR7614840.fastq.gz	701777	6dcaf534ccdfb6dd7e03c88603c79ff2
+bletz2018/reads/SRR7614841.fastq.gz	637526	5972e28dca0f641dfe6d7701a3df1a82
+bletz2018/reads/SRR7614842.fastq.gz	2238259	cb1c97bebbd0c213bd2b07e8e7640aee
+bletz2018/reads/SRR7614843.fastq.gz	2397690	3524be56d42a0abf37e1feeb0056230c
+bletz2018/reads/SRR7614844.fastq.gz	735954	8b5af9798d81e2e6cddbfdac9584bc96
+bletz2018/reads/SRR7614845.fastq.gz	2158739	0132cb56f69930793397650ceb14bb4b
+bletz2018/reads/SRR7614846.fastq.gz	3554075	49eb1504e95c9a6d00c98ab62e7c66b5
+bletz2018/reads/SRR7614847.fastq.gz	782583	e7c3bc9149e93e2b76087cef75518906
+bletz2018/reads/SRR7614848.fastq.gz	794690	6c040a70ad6045a8e6b2f5867ed1c684
+bletz2018/reads/SRR7614849.fastq.gz	850208	9b738d98194a8127b1a8b31f9d65dddf
+bletz2018/reads/SRR7614850.fastq.gz	3149710	53db266868c08c0cdb664013050cd9b4
+bletz2018/reads/SRR7614851.fastq.gz	3221900	aeaff253d44759f2b2e12fba97517963
+bletz2018/reads/SRR7614852.fastq.gz	1723856	60e04e186a92b93f8c6ceb106f314baa
+bletz2018/reads/SRR7614853.fastq.gz	955668	3eca50fbd1a25d53f83f893f762b0c0c
+bletz2018/reads/SRR7614854.fastq.gz	247634	322935427d5e6d7327a1b4664c95b6d7
+bletz2018/reads/SRR7614855.fastq.gz	1329243	66ff0adaf282b87e9d2cafd8c7b8ca80
+bletz2018/reads/SRR7614856.fastq.gz	1295855	6d577961d230fb67c2f4c9ba4db7c05b
+bletz2018/reads/SRR7614857.fastq.gz	1847146	fff69669e25d9564c3becb5471a6fdbb
+bletz2018/reads/SRR7614858.fastq.gz	2141594	e6243032adc966a17a9d74f3d019c6af
+bletz2018/reads/SRR7614859.fastq.gz	1835687	ea293776e38276cf890fdf6a115e84b6
+bletz2018/reads/SRR7614860.fastq.gz	1769695	69412bb693d4d5b9c582eb8642460951
+bletz2018/reads/SRR7614861.fastq.gz	1941376	bfb5bf2781d54b9da66589f93709e959
+bletz2018/reads/SRR7614862.fastq.gz	1151582	b59debf55124995cc56e434bb412290e
+bletz2018/reads/SRR7614863.fastq.gz	1228131	4cb48b60109f7c3816faf72cac56c1a9
+bletz2018/reads/SRR7614864.fastq.gz	1687968	0047d8f15c6a5c18fdde9b6bc609f141
+bletz2018/reads/SRR7614865.fastq.gz	2860746	055a3e7c7ebb673401ff4173a67172fc
+bletz2018/reads/SRR7614866.fastq.gz	3263326	0b89a96b6796c37cfaee2583eba08f27
+bletz2018/reads/SRR7614867.fastq.gz	1244688	7ec7286cd4b0d86bbce699713bd29064
+bletz2018/reads/SRR7614868.fastq.gz	978166	ffed519767a98cee951610cf87cebd12
+bletz2018/reads/SRR7614869.fastq.gz	2565406	826ce04482cd7fca450820fe1b703877
+bletz2018/reads/SRR7614870.fastq.gz	1121808	37998d21a722282b976b2e96472ed541
+bletz2018/reads/SRR7614871.fastq.gz	2052068	c78e945f225b03389c493b555a918516
+bletz2018/reads/SRR7614872.fastq.gz	3574681	34e5c87fa41996a666733692821a2aad
+bletz2018/reads/SRR7614873.fastq.gz	5030784	24267632977452c03e23b8680ca2d209
+bletz2018/reads/SRR7614874.fastq.gz	4285585	3ea7449619be61902da671d8c75a9481
+bletz2018/reads/SRR7614875.fastq.gz	1165976	5d373f5ea6254a4832cc18a3c06ae0ec
+bletz2018/reads/SRR7614876.fastq.gz	9239989	c2221da9ee5c5a34d0f5edac60650574
+bletz2018/reads/SRR7614877.fastq.gz	2805992	b6e185a693860490ed8514ef60f421a5
+bletz2018/reads/SRR7614878.fastq.gz	588511	7170cb5c6a2a431ec49c7c21d638fa64
+bletz2018/reads/SRR7614879.fastq.gz	2547549	573b7cee2fb0c2dd66f6082342d98c7b
+bletz2018/reads/SRR7614880.fastq.gz	1321227	bca90ec31fe0783ba1bc1c71e855014f
+bletz2018/reads/SRR7614881.fastq.gz	1931930	f3745c6fccd6660184fcacacaccde54f
+bletz2018/reads/SRR7614882.fastq.gz	3153741	f5f996656e65f585d9ee8dceaabee586
+bletz2018/reads/SRR7614883.fastq.gz	2227131	18bb04dd122d137e27e2dd6160c05a46
+bletz2018/reads/SRR7614884.fastq.gz	4121344	85a26e911395e9ec148e976f24fcfeee
+bletz2018/reads/SRR7614885.fastq.gz	2025502	68cd2b21101279183605567aa3d51528
+bletz2018/reads/SRR7614886.fastq.gz	9218965	9a614f01cdbc350eb6fcd0605e692bb3
+bletz2018/reads/SRR7614887.fastq.gz	8166959	1187e05efead9bc36a0a72ff79e81f9c
+bletz2018/reads/SRR7614888.fastq.gz	6601072	5c03e2782c31687058778dde8e440d44
+bletz2018/reads/SRR7614889.fastq.gz	893813	4c2e63d66b0542b89bd3e397a3717602
+bletz2018/reads/SRR7614890.fastq.gz	1634515	6631aab2927a4b1194e12c4a1068cd69
+bletz2018/reads/SRR7614891.fastq.gz	4752337	1b861b6722433c811e30141e990e4240
+bletz2018/reads/SRR7614892.fastq.gz	873495	9d7ea5111fb3f06ccfcc3e04b17bab65
+bletz2018/reads/SRR7614893.fastq.gz	2282493	19e0a1cddeac5706fdc031e323a1629d
+bletz2018/reads/SRR7614894.fastq.gz	1269373	cc043896129e87e2812185523ee9c20b
+bletz2018/reads/SRR7614895.fastq.gz	1383971	48dd8d680c1375dbaa39154560ccfcc6
+bletz2018/reads/SRR7614896.fastq.gz	4032875	fd79031b24a3958d7ae51b9862a01c78
+bletz2018/reads/SRR7614897.fastq.gz	3999615	0cc781fb0a216f87ac7feb0cade65b66
+bletz2018/reads/SRR7614898.fastq.gz	1211490	ebf3be1f19dc6a0cba9fa57a6b5a1de4
+bletz2018/reads/SRR7614899.fastq.gz	848868	b1ddd7285b81b459834c30cd9d634b5f
+bletz2018/reads/SRR7614900.fastq.gz	801200	bd6574d93b33e006e4dcbe678834d929
+bletz2018/reads/SRR7614901.fastq.gz	1425423	7f37a5711e876aeff1f651e9ea4db670
+bletz2018/reads/SRR7614902.fastq.gz	2529743	dd60d021ed3ec0d6348c555c88172df6
+bletz2018/reads/SRR7614903.fastq.gz	5110562	857549d34420183f6ec76a4ee0d3a502
+bletz2018/reads/SRR7614904.fastq.gz	2588807	7b1774e18145b32cab058054652d814e
+bletz2018/reads/SRR7614905.fastq.gz	2513897	a469a21b0c466151cf5206a9c10961ca
+bletz2018/reads/SRR7614906.fastq.gz	2264620	58717da925edc1101401ec9a6829e309
+bletz2018/reads/SRR7614907.fastq.gz	1139079	41ce83b86c973b2a4a7e63f9e9e9ff23
+bletz2018/reads/SRR7614908.fastq.gz	3777412	facb7c9bba3b30ff3c642a3ca403b842
+bletz2018/reads/SRR7614909.fastq.gz	1532192	1fea62d299fef53116557018b7f217ac
+bletz2018/reads/SRR7614910.fastq.gz	3300633	42e1e6f57c2b48f565791e6d18de06ad
+bletz2018/reads/SRR7614911.fastq.gz	9737364	7d5ff0cbba692784977255543213719a
+bletz2018/reads/SRR7614912.fastq.gz	3371790	d8595f02970bdc95ae6a0292fc47da1a
+bletz2018/reads/SRR7614913.fastq.gz	2300146	104983166404bff997da42478fa057bf
+bletz2018/reads/SRR7614914.fastq.gz	4342520	a2677df7df689da1aee9f30c73428d51
+bletz2018/reads/SRR7614915.fastq.gz	2668092	9fc1453f333801a7ca0f78b1de5f1068
+bletz2018/reads/SRR7614916.fastq.gz	3626064	4cc3d1d5c5fc6303125f7f7bc7586b51
+bletz2018/reads/SRR7614917.fastq.gz	2886303	8f33f23189007337075ec1a6747ac64b
+bletz2018/reads/SRR7614918.fastq.gz	4493434	3d2e18741325aa319e68473620232f96
+bletz2018/reads/SRR7614919.fastq.gz	761228	6a2f903055816b634a6c49ea9a09c15f
+bletz2018/reads/SRR7614920.fastq.gz	2574044	e6afa787e6084c28ebbdbc89a1bb0b9c
+bletz2018/reads/SRR7614921.fastq.gz	1431514	86d6ef8251fe93b75cc310dc12a5a512
+bletz2018/reads/SRR7614922.fastq.gz	5421735	fcd01cc066b6d527d7063c2ab06714f4
+bletz2018/reads/SRR7614923.fastq.gz	5497120	97c6907e9e1d209d26735d1d013ab6cf
+bletz2018/reads/SRR7614924.fastq.gz	3561094	4ddf02b8f7accf1e1f57c994566f1aa3
+bletz2018/reads/SRR7614925.fastq.gz	1129612	228336d61cb3ea80f9bc8cfebb3609ad
+bletz2018/reads/SRR7614926.fastq.gz	6806635	2824bf6c81d1b709bd2f33c513cf945c
+bletz2018/reads/SRR7614927.fastq.gz	398501	8abc6ced9adc617c19e90c686ad4b5b8
+bletz2018/reads/SRR7614928.fastq.gz	3799644	3bcf73bb12c4a32018be64794bc76967
+bletz2018/reads/SRR7614929.fastq.gz	3265297	43ed50822658383c2dd78553c0fa4698
+bletz2018/reads/SRR7614930.fastq.gz	1859606	71c469b81bcf45717c90d1249d68c04c
+bletz2018/reads/SRR7614931.fastq.gz	3112497	f9b4418b66661eb6abe8a2855935c761
+bletz2018/reads/SRR7614932.fastq.gz	9164063	726030c41f33f4fb1ab72c8d7f28e786
+bletz2018/reads/SRR7614933.fastq.gz	2694873	1c60e5062b5a03626d0698acdd5e7660
+bletz2018/reads/SRR7614934.fastq.gz	112207	b7446d93fee846ded8439f02dde0caff
+bletz2018/reads/SRR7614935.fastq.gz	2580759	7ea6c0b1b919691d2b565a8f5da0caa3
+bletz2018/reads/SRR7614936.fastq.gz	2203254	c92bea74a33ff124e4a425613cc31685
+bletz2018/reads/SRR7614937.fastq.gz	2512562	758554f6d4fadc70aaa93d63efe1c46d
+bletz2018/reads/SRR7614938.fastq.gz	3383334	4dbe98d54606b80af2acb916f810f29e
+bletz2018/reads/SRR7614939.fastq.gz	1685073	d5a412a61d89ce845f801d51427e1426
+bletz2018/reads/SRR7614940.fastq.gz	1089682	3ad841bc517d3c740f30c9e4a004e2bd
+bletz2018/reads/SRR7614941.fastq.gz	8938842	5e12cbf681698b3d34445a76164c5cd6
+bletz2018/reads/SRR7614942.fastq.gz	12229792	383db76cea79d58ee7bf6e9e1393181f
+bletz2018/reads/SRR7614943.fastq.gz	1489597	6932e98dda123c601de5fa1b08214112
+bletz2018/reads/SRR7614944.fastq.gz	7831951	5927240e5b1fbe534b3d9aa5c5cb3749
+bletz2018/reads/SRR7614945.fastq.gz	5798251	025ca21e02e0a1f4efd8166e9d7af189
+bletz2018/reads/SRR7614946.fastq.gz	3343632	6665b04694d56030fb7f6728873d2005
+bletz2018/reads/SRR7614947.fastq.gz	828436	56fafc02e0ab895044ed76d8445cc85f
+bletz2018/reads/SRR7614948.fastq.gz	3172462	0537444af354ef634dcdece14f9ee236
+bletz2018/reads/SRR7614949.fastq.gz	1361005	ce0fc20e7f37d9ac5791a938ae43ab64
+bletz2018/reads/SRR7614950.fastq.gz	1526850	95808b43cc972b1d507e048bbdfbe543
+bletz2018/reads/SRR7614951.fastq.gz	649183	8450f5575f5dc2bdf939ca891debe9d8
+bletz2018/reads/SRR7614952.fastq.gz	3020017	b78134554d5c313b620fff55553f359b
+bletz2018/reads/SRR7614953.fastq.gz	818779	dac35f6759d81db6d27af5261ec26e1d
+bletz2018/reads/SRR7614954.fastq.gz	3821109	ae86d84e67c2c7cb384fa0cee0bfe423
+bletz2018/reads/SRR7614955.fastq.gz	5699095	c57af82bbf74b31248f6451513c6ba13
+bletz2018/reads/SRR7614956.fastq.gz	2419670	2e79b9918eca20263306a4156fc40292
+bletz2018/reads/SRR7614957.fastq.gz	3142769	c237b33bd451efcbb8c39d6a19e0117a
+bletz2018/reads/SRR7614958.fastq.gz	2579974	364339f4650c2acc9376076c8394a00c
+bletz2018/reads/SRR7614959.fastq.gz	3955980	52d59efe4ff4a3ac60c4d4c2b8fcd466
+bletz2018/reads/SRR7614960.fastq.gz	1885350	7240a12b044190b513cc3f01e97208f2
+bletz2018/reads/SRR7614961.fastq.gz	5403093	4c097c50106dd823665f1b600b0ed918
+bletz2018/reads/SRR7614962.fastq.gz	2456755	ff01f7537373c88add89eb8aad5fe6eb
+bletz2018/reads/SRR7614963.fastq.gz	3895944	6c2bddff626c07ba2fea6dba36cc8023
+bletz2018/reads/SRR7614964.fastq.gz	2995056	8bce466ca8d57da355500056a7533c77
+bletz2018/reads/SRR7614965.fastq.gz	3588064	8d631462e736dd0726827e839cf72f78
+bletz2018/reads/SRR7614966.fastq.gz	3513490	248e3d316375e9c8b32718adb716e1e3
+bletz2018/reads/SRR7614967.fastq.gz	718441	5720f3fb4c7cbb2a2fbb3c48d16ca7fa
+bletz2018/reads/SRR7614968.fastq.gz	1948606	656e0bbd10f5b9a69065cd1e9dfe5918
+bletz2018/reads/SRR7614969.fastq.gz	940025	34f1c3c54c6761d91fcfd573f7badeb9
+bletz2018/reads/SRR7614970.fastq.gz	2528192	3a5dab6dd0745f10b8879d4d9e7df34a
+bletz2018/reads/SRR7614971.fastq.gz	3264222	c03fb28b096fccfc866ea2e2965e734e
+bletz2018/reads/SRR7614972.fastq.gz	2840393	e57b221faec370334feb1e5d48b5cbb7
+bletz2018/reads/SRR7614973.fastq.gz	2274057	20680db3c4ea29373f33a37b427f018e
+bletz2018/reads/SRR7614974.fastq.gz	1722892	7c21fa3a1f88bd85a4d6c259a6dd2991
+bletz2018/reads/SRR7614975.fastq.gz	3130435	ca615a5958314ce9407cf53a2d7910f4
+bletz2018/reads/SRR7614976.fastq.gz	2343423	afbf23e8256381bdb8b9c4e005f592bd
+bletz2018/reads/SRR7614977.fastq.gz	957475	ec62993b5bd740a6f42b359669a57189
+bletz2018/reads/SRR7614978.fastq.gz	1611058	160fb7f5b5665308170b1c228d18c9f1
+bletz2018/reads/SRR7614979.fastq.gz	899242	17347fefb4b50fb1b9d76d49cb8c4d89
+bletz2018/reads/SRR7614980.fastq.gz	1921717	4bd29b87b73e0d9f63e11ac17087b739
+bletz2018/reads/SRR7614981.fastq.gz	2580101	997c6c1b5bf43328ebdafac285114ff6
+bletz2018/reads/SRR7614982.fastq.gz	806428	2796b41844d6dc8209a4dd6681d0bea9
+bletz2018/reads/SRR7614983.fastq.gz	2999832	68e2969c100bb5be61a7435494595454
+bletz2018/reads/SRR7614984.fastq.gz	2588496	64763dde13e1360821d247f6d134c395
+bletz2018/reads/SRR7614985.fastq.gz	1096448	ffcebd43fa4fb62a414f9e80fb3f65e6
+bletz2018/reads/SRR7614986.fastq.gz	4009033	f3235f5e15a73a1f7cf104bb5e620752
+bletz2018/reads/SRR7614987.fastq.gz	1545504	28f29d79cdfd5f1e23381226532ad4db
+bletz2018/reads/SRR7614988.fastq.gz	6714241	ec44d96d00bd191b02562860bf7f04c1
+bletz2018/reads/SRR7614989.fastq.gz	1680262	73daa67e1056f5aa1ab720d658fe3412
+bletz2018/reads/SRR7614990.fastq.gz	1234389	5cf1ba388d44dbecb66548e39d5bc28f
+bletz2018/reads/SRR7614991.fastq.gz	1369331	421dcdd4a5dd6372c32cb6719b64ed88
+bletz2018/reads/SRR7614992.fastq.gz	1199412	a760dc7101ad0f6abf756b46d4dce85f
+bletz2018/reads/SRR7614993.fastq.gz	2557942	38d1e63c13e28cf14b73b41bae61b64f
+bletz2018/reads/SRR7614994.fastq.gz	3435181	2bd0dc43ae677e861a2e3d1eec2e7823
+bletz2018/reads/SRR7614995.fastq.gz	5428172	e6b57de2bb0cc89ea0725f7d9c56cdf1
+bletz2018/reads/SRR7614996.fastq.gz	863479	d6c1df4583b035581c17265559dc5274
+bletz2018/reads/SRR7614997.fastq.gz	4096897	4488ac1c352155f42ff73b70e7ceaaab
+bletz2018/reads/SRR7614998.fastq.gz	2220678	5f88a0b99bb4f22e1d6d0537e3a00017
+bletz2018/reads/SRR7614999.fastq.gz	3249777	207aa9e08fa8276ec70f508b27404d75
+bletz2018/reads/SRR7615000.fastq.gz	2200375	437a38435a1e164e904c8525f56c4165
+bletz2018/reads/SRR7615001.fastq.gz	4190113	365c8f417a66fb38ec01a27e906506da
+bletz2018/reads/SRR7615002.fastq.gz	1016739	ffdd74e13db3f1bc693ef68adb232bef
+bletz2018/reads/SRR7615003.fastq.gz	2683589	40c8dd3bc809c3cb7565a4882314c755
+bletz2018/reads/SRR7615004.fastq.gz	908579	21f72479097c75f197c958c639b3249e
+bletz2018/reads/SRR7615005.fastq.gz	1441768	2cc6dc70de9587c00c384fc139d12cf5
+bletz2018/reads/SRR7615006.fastq.gz	2655085	8e00e1460eba128e7a744422dce17764
+bletz2018/reads/SRR7615007.fastq.gz	4699540	865ab352dbf5eac7f37f30c5801763ff
+bletz2018/reads/SRR7615008.fastq.gz	3093448	57aff6d38a26f7b499e6f5899edf8855
+bletz2018/reads/SRR7615009.fastq.gz	5571260	ec3067dcaa5440a59a128829d3677cd9
+bletz2018/reads/SRR7615010.fastq.gz	6511921	aa4d387f224ef32cc808e7ac95c47d5e
+bletz2018/reads_manifest.csv	16244	
+bletz2018/samples.csv	67525	
+molecol2019/2018_Ellison_Rsierrae_Bd_results.csv	187081	
+molecol2019/2018_Ellison_Rsierrae_CFS_inhibition_results.csv	10826	
+molecol2019/2018_Ellison_Rsierrae_microbiome_mapping_file.csv	20414	
+molecol2019/README.txt	2801	
+molecol2019/dryad_original/2018_Ellison_Rsierrae_Bd_results.csv	187081	
+molecol2019/dryad_original/2018_Ellison_Rsierrae_CFS_inhibition_results.csv	10826	
+molecol2019/dryad_original/2018_Ellison_Rsierrae_CFS_inhibition_sequences.txt	17155	
+molecol2019/dryad_original/2018_Ellison_Rsierrae_microbiome_mapping_file.csv	20414	
+molecol2019/fna_seqs_per_sample.tsv	1550	
+molecol2019/isolate_assays.csv	23472	
+molecol2019/isolates.fasta	16806	
+molecol2019/reads/2018_Ellison_Rsierrae_microbiome_Illumina_sequences.fna.gz	847819210	70c94f5eccaeb1777e94e72f29660215
+molecol2019/samples.csv	25857	
+rebollar2019/README.txt	3482	
+rebollar2019/demultiplex_counts.csv	674	
+rebollar2019/ena_filereport.tsv	1337	
+rebollar2019/isolate_assays.csv	191924	
+rebollar2019/isolates.fasta	315920	
+rebollar2019/isolates_genbank.gb	859330	
+rebollar2019/reads/SRR8570210.fastq.gz	2236484147	96d957fbd7dec2934b262a22114595a4
+rebollar2019/reads/SRR8570211.fastq.gz	2666088916	5c6222a8267644f1ff63f305e9d15f65
+rebollar2019/reads/SRR8570212.fastq.gz	129083225	dd3f143d0ed7c39cc8bb8dcc93dab92a
+rebollar2019/reads_demultiplexed/R01_R1.fastq.gz	48220756	383cf919e58b317978213b4291e1c56f
+rebollar2019/reads_demultiplexed/R01_R2.fastq.gz	56103508	3f657a81c16a29f73cfdbde53917d732
+rebollar2019/reads_demultiplexed/R02_R1.fastq.gz	46671044	ac67173a9b523f5c4562774cffca7049
+rebollar2019/reads_demultiplexed/R02_R2.fastq.gz	53391820	100e239205dd36c6bc0390b9566885b1
+rebollar2019/reads_demultiplexed/R03_R1.fastq.gz	43690618	e07a55b63c9b5051ae4090d9faee2e25
+rebollar2019/reads_demultiplexed/R03_R2.fastq.gz	50732748	0933d67c1e89390ffc7fbd69dbcc18f4
+rebollar2019/reads_demultiplexed/R04_R1.fastq.gz	33695959	9d5f7d8d8fcba516d2baae00ca12acf5
+rebollar2019/reads_demultiplexed/R04_R2.fastq.gz	42126114	e8d08affa436e969a0a9f76a15edc3d8
+rebollar2019/reads_demultiplexed/R05_R1.fastq.gz	28193583	29af3789c0775716186deaeec8273043
+rebollar2019/reads_demultiplexed/R05_R2.fastq.gz	36542855	e15518dc6e8774fe2210c7326d0d052e
+rebollar2019/reads_demultiplexed/R06_R1.fastq.gz	32796862	4306ba17a3b34063c54f3d355b8a5fab
+rebollar2019/reads_demultiplexed/R06_R2.fastq.gz	40264904	59176add5e752ec10e646b84679a444d
+rebollar2019/reads_demultiplexed/R07_R1.fastq.gz	36033553	5acd108503c7498cf9a237010b1d75e2
+rebollar2019/reads_demultiplexed/R07_R2.fastq.gz	41631923	0eec9fc21ada50ea8a5a4f1291a79f7a
+rebollar2019/reads_demultiplexed/R08_R1.fastq.gz	31253438	86cb5bb2809e24e7bbe41575acdc4f50
+rebollar2019/reads_demultiplexed/R08_R2.fastq.gz	37370165	c89d379793997719de3cff7fe8340a68
+rebollar2019/reads_demultiplexed/R09_R1.fastq.gz	25590619	1ff0968071509db1d28b81005717d448
+rebollar2019/reads_demultiplexed/R09_R2.fastq.gz	33639879	8b23e55acfd2a1fae616645f0eeca088
+rebollar2019/reads_demultiplexed/R10_R1.fastq.gz	27036651	13505c24d089306b6a192d12876e9a43
+rebollar2019/reads_demultiplexed/R10_R2.fastq.gz	34601637	22549281909c5a960fd6190eba06f2fe
+rebollar2019/reads_demultiplexed/R11_R1.fastq.gz	25206848	c0b190a510c4d841129fda490a950dcf
+rebollar2019/reads_demultiplexed/R11_R2.fastq.gz	32767692	dcc4c05517ffb28ba886240a8feafe3c
+rebollar2019/reads_demultiplexed/R12_R1.fastq.gz	24509496	b6ec1a6ac8dd491d2ac7f3b0e9c284ee
+rebollar2019/reads_demultiplexed/R12_R2.fastq.gz	31965876	14620b30fc1cf1405d0a57cc840e3477
+rebollar2019/reads_demultiplexed/R13_R1.fastq.gz	21896874	c01537296dd0be2482c4f2671959ad4c
+rebollar2019/reads_demultiplexed/R13_R2.fastq.gz	28801273	c1f346fcd4e00b43401839d4e28ac7d8
+rebollar2019/reads_demultiplexed/R14_R1.fastq.gz	23253684	0134ec88abf9c26d89bdf0257b4f205e
+rebollar2019/reads_demultiplexed/R14_R2.fastq.gz	30112929	2b5a4f72827f17cb91397fd0b09ad2c7
+rebollar2019/reads_demultiplexed/R15_R1.fastq.gz	23722202	8d7fe3424b9dc5362356fb7e11f4c99c
+rebollar2019/reads_demultiplexed/R15_R2.fastq.gz	29454008	008c30e3081ac1a61a21e7387f68120b
+rebollar2019/reads_demultiplexed/R16_R1.fastq.gz	22252307	b133cdb055e87ae002881ae9d0a3fc3b
+rebollar2019/reads_demultiplexed/R16_R2.fastq.gz	29084095	586b41e68e0ebb0e4f3d2e4859f2b62e
+rebollar2019/reads_demultiplexed/R17_R1.fastq.gz	21312351	f1c6bd23fa0d957cfc2367647a0d3d7b
+rebollar2019/reads_demultiplexed/R17_R2.fastq.gz	28077765	049a989282f72c5fabd2e57cb4ba84aa
+rebollar2019/reads_demultiplexed/R18_R1.fastq.gz	21931273	ca257d4d7c54b5cb640d32e361651632
+rebollar2019/reads_demultiplexed/R18_R2.fastq.gz	28095470	48521b7c8aadab725d776eb646e4070d
+rebollar2019/reads_demultiplexed/R19_R1.fastq.gz	24261666	b24b3b3fee50810db00a269ae71a1fea
+rebollar2019/reads_demultiplexed/R19_R2.fastq.gz	29672946	46fbb058a1ff4826c1f4bd6bb055b3a5
+rebollar2019/reads_demultiplexed/R20_R1.fastq.gz	25436388	448282944caf5f285a987aa3840ffe69
+rebollar2019/reads_demultiplexed/R20_R2.fastq.gz	30408314	ea91e42b1357b34adf2a237f7d9bb43e
+rebollar2019/reads_demultiplexed/R21_R1.fastq.gz	20572040	78e71c0c51bff2702e3c0910bd8e6b20
+rebollar2019/reads_demultiplexed/R21_R2.fastq.gz	26597337	f1414ac27bd3153f9b6e6a2e832c9ec1
+rebollar2019/reads_demultiplexed/R22_R1.fastq.gz	25636194	b7c9f3f2cb1efb7c62fa2d520cbf3547
+rebollar2019/reads_demultiplexed/R22_R2.fastq.gz	30040226	1aae8c20badccc869b32c4b14526d786
+rebollar2019/reads_demultiplexed/R23_R1.fastq.gz	21367457	ae85cf44f688b7b955308524276e5e91
+rebollar2019/reads_demultiplexed/R23_R2.fastq.gz	26916229	6ed249d67f633e949971c1e57fefbd91
+rebollar2019/reads_demultiplexed/R24_R1.fastq.gz	21678374	a5b24d873fbb6cb733eaac14ce69de60
+rebollar2019/reads_demultiplexed/R24_R2.fastq.gz	27222759	7820e6ad94b9ed033580d3646b350d28
+rebollar2019/reads_demultiplexed/R25_R1.fastq.gz	19585333	d28e1c67906eea9ab7c12cf7fac312f9
+rebollar2019/reads_demultiplexed/R25_R2.fastq.gz	25658251	2c5f2644fe82a5639307a6b5a378dd24
+rebollar2019/reads_demultiplexed/R26_R1.fastq.gz	23384987	c26fa34a507b823bfb5e00e70f35f7c0
+rebollar2019/reads_demultiplexed/R26_R2.fastq.gz	28006120	5eda84549a54e6c9f7e3605fc5c60f92
+rebollar2019/reads_demultiplexed/R27_R1.fastq.gz	19582726	527d1d5230f6b7fb411edcd69fa8ea94
+rebollar2019/reads_demultiplexed/R27_R2.fastq.gz	25053874	cf771a26c7a6f52e15d941ce0ff68ccd
+rebollar2019/reads_demultiplexed/R28_R1.fastq.gz	18753485	fe3ce3cbb66d42a55fdbed03cf23653a
+rebollar2019/reads_demultiplexed/R28_R2.fastq.gz	24853328	512cd53da8442dcdadfa63b8a6042802
+rebollar2019/reads_demultiplexed/R29_R1.fastq.gz	18276205	30d72edcdcd9e567486dadae6feb81ef
+rebollar2019/reads_demultiplexed/R29_R2.fastq.gz	24038954	42a6e08b6b7ea7010a41d3fc64c33b86
+rebollar2019/reads_demultiplexed/R30_R1.fastq.gz	18780272	f3042a75be4fb38b938d4fa6a7984601
+rebollar2019/reads_demultiplexed/R30_R2.fastq.gz	24379897	f2d5eb97844261ddb2fa7fb0f661d3e7
+rebollar2019/reads_demultiplexed/R31_R1.fastq.gz	17756706	3060adf3cc030fa4a72eee14a9b4d23f
+rebollar2019/reads_demultiplexed/R31_R2.fastq.gz	23776028	f0ad5e05cc8467f162e90f2a9740fac0
+rebollar2019/reads_demultiplexed/R32_R1.fastq.gz	22842004	7b65064e4ef56c94170325e4fed355c8
+rebollar2019/reads_demultiplexed/R32_R2.fastq.gz	26337650	02bb853b91cba53b6e86821d5230756c
+rebollar2019/reads_demultiplexed/R33_R1.fastq.gz	22104353	977ec5e9e224ac8118a7a92c710d7bd4
+rebollar2019/reads_demultiplexed/R33_R2.fastq.gz	26090389	8b4ac855800900b2c65185fe858c0989
+rebollar2019/reads_demultiplexed/R34_R1.fastq.gz	18421388	998f2334f0ce67fbfdcc85561763987b
+rebollar2019/reads_demultiplexed/R34_R2.fastq.gz	23748380	4ea34bcd9072b96f26dca94dc48962aa
+rebollar2019/reads_demultiplexed/R35_R1.fastq.gz	22375378	0d7381015343a176aa522e2671b47453
+rebollar2019/reads_demultiplexed/R35_R2.fastq.gz	25022037	81ee0979db730a27161f78300e47045e
+rebollar2019/reads_demultiplexed/R36_R1.fastq.gz	16952881	253565c7ef7caeea2dbdadfacdba6976
+rebollar2019/reads_demultiplexed/R36_R2.fastq.gz	21866617	f0b68e129c13baa5db340957871a7ad0
+rebollar2019/reads_demultiplexed/R37_R1.fastq.gz	18824815	fbcb7183d284517562a105aafe4af4af
+rebollar2019/reads_demultiplexed/R37_R2.fastq.gz	22574715	48d753184d36f25b930de66b154e1e7a
+rebollar2019/reads_demultiplexed/R38_R1.fastq.gz	17566986	76082d69915edd8f5bb17c2162bb2910
+rebollar2019/reads_demultiplexed/R38_R2.fastq.gz	22776405	83f5890e01cb0eb77b09661573c46f4b
+rebollar2019/reads_demultiplexed/R39_R1.fastq.gz	16227147	f25c4c71d8a66400701a675473fd70ea
+rebollar2019/reads_demultiplexed/R39_R2.fastq.gz	21928964	51a3e40e0b636fc64b82366982bdfda1
+rebollar2019/reads_demultiplexed/R40_R1.fastq.gz	17792321	41251168fabc01f66ff9973138360475
+rebollar2019/reads_demultiplexed/R40_R2.fastq.gz	22705457	fd7a11d72572f6d8d64b7dd51c78f506
+rebollar2019/reads_demultiplexed/R41_R1.fastq.gz	18541955	24585f8aaec7c786c78d465278850359
+rebollar2019/reads_demultiplexed/R41_R2.fastq.gz	22407884	0e0100359f367aaef9e78ddff5562ba1
+rebollar2019/reads_demultiplexed/R42_R1.fastq.gz	20537732	0425031cd5e905e383ab11efb59fa724
+rebollar2019/reads_demultiplexed/R42_R2.fastq.gz	24042469	3595df8861cbdc06555113cc9232fe8b
+rebollar2019/reads_demultiplexed/R43_R1.fastq.gz	21027604	aebe6f1194b359c288451e7b4aa3771b
+rebollar2019/reads_demultiplexed/R43_R2.fastq.gz	24739909	eae22295fe2d95722540e861524e92c5
+rebollar2019/reads_demultiplexed/R44_R1.fastq.gz	18119399	83a6f55919a78106c7d1b461c993b3fb
+rebollar2019/reads_demultiplexed/R44_R2.fastq.gz	23056304	e0911a04532dea758bf906dc43faf3fd
+rebollar2019/reads_demultiplexed/R45_R1.fastq.gz	16078099	98ab696a0b69da8b1c4dfc35301380f1
+rebollar2019/reads_demultiplexed/R45_R2.fastq.gz	21105357	0ddc2f1c123feb329f97d3e1c22f6569
+rebollar2019/reads_demultiplexed/R46_R1.fastq.gz	15757825	c93430c9940ec84a5320a33972776d44
+rebollar2019/reads_demultiplexed/R46_R2.fastq.gz	21062482	2348649be07ff35f757691f7f342f100
+rebollar2019/reads_demultiplexed/R47_R1.fastq.gz	17861271	3baef787f691a3e4c633882e8c9606bc
+rebollar2019/reads_demultiplexed/R47_R2.fastq.gz	21561636	e3298a16c6738556f74b406df020379a
+rebollar2019/reads_demultiplexed/R48_R1.fastq.gz	18253783	b1b310e77dc6bd59bc4f629be5c414ea
+rebollar2019/reads_demultiplexed/R48_R2.fastq.gz	21350347	376cc2732c35b6169af3861f67050126
+rebollar2019/reads_demultiplexed/R49_R1.fastq.gz	14041014	b8897a34aab8448fd91746972e76d587
+rebollar2019/reads_demultiplexed/R49_R2.fastq.gz	18636388	a0bc3139bfd22c509b79a3acb5694f13
+rebollar2019/reads_demultiplexed/R50_R1.fastq.gz	14498126	cd00387652203b3155cb3c11744a116d
+rebollar2019/reads_demultiplexed/R50_R2.fastq.gz	18792728	9e9f6d59e88af8b9f2e10ac88b469369
+rebollar2019/reads_demultiplexed/R51_R1.fastq.gz	13517859	bea4219893cae6e1bd40831e7b68ec22
+rebollar2019/reads_demultiplexed/R51_R2.fastq.gz	17545209	fa4b43c1ca584c57e40586e453fb9c4d
+rebollar2019/reads_demultiplexed/R52_R1.fastq.gz	14975204	aa6ea66ea4fefe7e3cc7a0574ca84769
+rebollar2019/reads_demultiplexed/R52_R2.fastq.gz	17282748	7301cc1af491e77bc6bf743a5215a728
+rebollar2019/reads_demultiplexed/R53_R1.fastq.gz	16275060	bea06f35c89411823afe48776bc88ede
+rebollar2019/reads_demultiplexed/R53_R2.fastq.gz	19001508	f6c240b7679f80464ef011feba14246b
+rebollar2019/reads_demultiplexed/R54_R1.fastq.gz	12530436	b3125985e4ed6c42193a66bb29b5c093
+rebollar2019/reads_demultiplexed/R54_R2.fastq.gz	16471587	c0e7510a9474336227c9292c071d3c70
+rebollar2019/reads_demultiplexed/R55_R1.fastq.gz	12114744	077ccd75f424b8254f5cd3fc479df3b4
+rebollar2019/reads_demultiplexed/R55_R2.fastq.gz	16048072	1f4bc1719a740e9773930961b414a529
+rebollar2019/reads_demultiplexed/R56_R1.fastq.gz	10036892	5636deb6c1c4446565f2ce0692091fd7
+rebollar2019/reads_demultiplexed/R56_R2.fastq.gz	13626872	42ca9426b337150c3fd911f730bc4498
+rebollar2019/reads_demultiplexed/R57_R1.fastq.gz	10376937	31108a925cd96f4bd7d615b10be428f5
+rebollar2019/reads_demultiplexed/R57_R2.fastq.gz	13792213	6150bf91c3765a20ef82380007d34a8b
+rebollar2019/reads_demultiplexed/R58_R1.fastq.gz	10455987	c9e0e755f2c2ea86483bff90908af65c
+rebollar2019/reads_demultiplexed/R58_R2.fastq.gz	13564438	76f12503a8273ad74943c4c6ee568cb6
+rebollar2019/reads_demultiplexed/R59_R1.fastq.gz	10882406	2da500b3a09fa5acb7d102d91173a9ac
+rebollar2019/reads_demultiplexed/R59_R2.fastq.gz	12582158	d9069c1f72c6e1cbf2c4a010a210385d
+rebollar2019/reads_demultiplexed/R60_R1.fastq.gz	10637897	7eafc6f5a0a0eb7c70d73173b7f5f25a
+rebollar2019/reads_demultiplexed/R60_R2.fastq.gz	12309985	a16e4219c137f67aa3b434897e2c6f3f
+rebollar2019/reads_demultiplexed/R61_R1.fastq.gz	3350298	f3afaa88b111f68e92aff5f1db168cd2
+rebollar2019/reads_demultiplexed/R61_R2.fastq.gz	3561919	382404b818a1b2ddd8f7d38b00c74e90
+rebollar2019/rebollar_barcodes.csv	1694	
+rebollar2019/samples.csv	16679	
+walke2015/README.txt	4032	
+walke2015/Walke2015_global_mapping_file_user_supplied.csv	23383	
+walke2015/ena_filereport.tsv	607	
+walke2015/isolate_assays.csv	349503	
+walke2015/isolates.fasta	1004955	
+walke2015/isolates_genbank.gb	2354975	
+walke2015/reads/SRR2162774.fastq.gz	1137891826	6619db7ccb67efa89fa3ec824401cfaa
+walke2015/samples.csv	22500	
+walke2017/README.txt	2259	
+walke2017/isolate_assays.csv	436351	
+walke2017/population_bd_prevalence.csv	494	
+walke2017/samples.csv	22500	

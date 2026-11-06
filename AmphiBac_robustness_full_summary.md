@@ -42,7 +42,7 @@ We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
 
 ## 2. The database itself
 
-![Database audit]({{artifact:b7464cfe-bbf8-4b68-8705-c7eff66252f4}})
+![Database audit](figures/fig0_database_audit.png)
 
 - **Labels are a hard cutoff on a continuous score.** Inhibitory means a CFS score above 80, Facilitating means −20 or below, and everything else is NoEffect. As a result, 790 isolates that the original study called inhibitory are labelled NoEffect.
 - **Identical sequences carry different functions.** Among identical 515F fragments with ≥2 labelled isolates, 74% of groups (90 bp), 73% (120 bp) and 69% (253 bp) contain conflicting labels.
@@ -55,11 +55,11 @@ We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
   - `Assay.Method` contains auto-fill errors (from "97 well" through "223 well CFS assay").
 - **Coverage along 16S.** Most sequences are Sanger reads spanning *E. coli* positions about 90–870. The largest common window is V3–V4 (296–795, 500 bp), which 6,037 tested isolates (77%, from 27 of 30 studies) span without IUPAC codes. Beyond about 600 bp, coverage collapses and the surviving set becomes biased toward long-read studies (45–51% inhibitory vs 38%).
 
-![Fragment coverage]({{artifact:16e859fe-f259-4d69-8ae2-3505be53950c}})
+![Fragment coverage](figures/fig_fragment_overlap.png)
 
 ## 3. How vsearch picks a "top match"
 
-![Top hit vs exhaustive]({{artifact:eaa04451-a001-4e1c-b14b-cf70ffb44660}})
+![Top hit vs exhaustive](figures/fig_step1_tophit_vs_all.png)
 
 - **The default never picks a lower-identity reference, but ties are the norm.** At the top identity, 61% of matched meta-analysis sOTUs (85% of matched reads) and 77% of bullfrog ASVs have ≥2 tied references. In the longer windows the tie rate is 79–99%.
 - **Which tied reference wins depends on file order.** Across 10 shuffles of the reference FASTA:
@@ -75,7 +75,7 @@ We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
 - **Ambiguity codes.** N and compatible IUPAC codes score as matches.
 - **Missed matches.** The default `maxrejects 32` almost never misses a genuine full-coverage match (5 of 537).
 
-![Edge cases]({{artifact:874b4b84-6fd0-48c4-818e-d07171d442a0}})
+![Edge cases](figures/fig_step3_edge_cases.png)
 
 ## 4. Thresholds and fragment length
 
@@ -92,9 +92,9 @@ We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
 
   No region or length beats the **genus-only baseline (κ 0.45)**.
 
-![Kappa curves]({{artifact:ad797c86-021b-4658-9095-64c039f08558}})
+![Kappa curves](figures/lt_fig3_kappa_curves.png)
 
-![Window synthesis]({{artifact:acecbd8d-553e-4fa7-9bc4-9cbb3e50d459}})
+![Window synthesis](figures/fig_r3_window_synthesis.png)
 
 ## 5. Does 16S similarity carry functional signal at all?
 
@@ -106,9 +106,9 @@ We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
 - **Correction to an earlier result.** Round 2 found that near-full-length identity seemed to help. Round 3 showed this was an isolate-set effect: on the fixed panel, V4 already reaches the same agreement.
 - **Phylogenetic signal is weak and the same in every window.** Fritz–Purvis D is 0.52–0.76 (typical conserved microbial traits average about 0.07). τD is not deeper than expected once labels are shuffled within studies. Blomberg's K on the score is about 3×10⁻⁵.
 
-![Decay curves]({{artifact:3b809a47-3603-487e-a1a0-2995d18e7e88}})
+![Decay curves](figures/fig_r2_decay_curves.png)
 
-![Genus baseline]({{artifact:b345b5be-def9-4292-912e-638073988986}})
+![Genus baseline](figures/fig_genus_baseline.png)
 
 ## 6. Database releases and out-of-sample prediction
 
@@ -119,7 +119,7 @@ We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
 
 ## 7. Impact on real community data
 
-![What inhibitory reads are]({{artifact:a6185c00-32ba-40a4-8f96-840217fe9300}})
+![What inhibitory reads are](figures/fig_rd4_inhibitory_read_composition.png)
 
 - **Many "inhibitory" reads come from mostly non-inhibitory lineages.** In the meta-analysis, 56% of pipeline-"inhibitory" reads come from features whose ≥99%-identical isolates are mostly non-inhibitory, and 78% come from features that also hit the Facilitating subset. In the SERDP frogs, the median frog has 74% of reads "inhibitory" and 57% "facilitating".
 - **The metric tracks cultured coverage.** Inhibitory_Proportion vs Full_Proportion: ρ = 0.947 in the meta-analysis and r = 0.996 in the bullfrogs.
@@ -128,9 +128,9 @@ We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
 - **Method choices change conclusions.** *A. boreas* vs *L. catesbeianus* is n.s. under the pipeline but significant under consensus rules. Madagascar vs USA reverses direction under a ≥75%-of-isolates rule.
 - **Minor sensitivities.** InhibitoryStrict vs Inhibitory barely matters (ρ = 0.996). Rarefaction seed and thread count are negligible.
 
-![Permutation null]({{artifact:c97dafc4-3662-4743-acac-6b61fe7b2a71}})
+![Permutation null](figures/fig_null_per_sample.png)
 
-![Contrasts by method]({{artifact:895214e2-5fa4-46c5-93ed-fb711a3e6ed2}})
+![Contrasts by method](figures/fig_rd3_contrasts_by_method.png)
 
 ## 8. Validation against Bd infection
 
@@ -141,7 +141,7 @@ We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
 - All 15 naive correlations are positive.
 - Power is low: with 10 ponds, only |r| ≥ 0.80 is detectable.
 
-![Bd bullfrog]({{artifact:a3094ba4-400d-4264-9553-942866638a1b}})
+![Bd bullfrog](figures/fig_bd_validation.png)
 
 **SERDP leopard frogs** (372 frogs; 100 infected)
 
@@ -152,7 +152,7 @@ We reproduced this exactly with vsearch 2.32.0. QIIME itself was not run.
 - **Label-permutation null.** The real labels' effect is typical of shuffled labels (71% of shuffles are as or more extreme).
 - **Why the naive test is significant.** Sites differ in both prevalence and "inhibitory" share: TN, LA and Panama are high on both, NM and PA low.
 
-![SERDP Bd]({{artifact:a609d8f1-5a73-4b9e-bd23-412926a87c8a}})
+![SERDP Bd](figures/fig_serdp_bd_validation.png)
 
 ## 8b. Is the score distribution multimodal?
 
@@ -164,9 +164,9 @@ Hartigan's dip test on the 6,245 CFS-scored isolates, with 2,000 bootstraps and 
 
 The >80 / ≤−20 label cutoffs therefore split one skewed distribution rather than separating natural groups.
 
-![Dip test]({{artifact:d5a3e1f4-a7d2-43cf-8c45-2a66adb33bdb}})
+![Dip test](figures/fig_score_diptest.png)
 
-Tables: [score_diptest.xlsx]({{artifact:f2384e74-ce47-46c6-80ea-a687bbf6e2fd}}), [diptest_by_group.csv]({{artifact:fb33c488-299a-481f-8221-c62beeee46dd}}).
+Tables: [score_diptest.xlsx](tables/score_diptest.xlsx), [diptest_by_group.csv](tables/diptest_by_group.csv). Script: [score_diptest.py](scripts/score_diptest.py).
 
 ## 8c. Tree-based prediction (PICRUSt2-style placement)
 
@@ -179,9 +179,9 @@ We placed reads into a 7,279-isolate reference tree with EPA-ng and predicted tr
 - **Leopard-frog Bd test.** No tree-based metric predicts infection within site × season (OR 0.89–1.27 per SD, all CIs include 1).
 - **Shuffled labels.** The observed effects sit inside the null.
 
-![Placement benchmark]({{artifact:b95974d0-c4fd-4253-8aee-a4be3b20e4ef}})
+![Placement benchmark](figures/fig_method_comparison.png)
 
-Report: [AmphiBac_placement_method_report.md]({{artifact:2ae9d06a-ec9d-4758-8c63-e4b657649c3b}}).
+Report: [AmphiBac_placement_method_report.md](reports/AmphiBac_placement_method_report.md).
 
 ## 8d. Primer use in amphibian microbiome studies
 
@@ -196,7 +196,7 @@ Of 180 primary studies that state their region:
 
 V4 fell from 80% of studies in 2015–17 to 42% in 2024–26. Gut studies favour V3–V4, mostly with 338F/806R.
 
-Report: [amphibian_16S_primer_survey.md]({{artifact:1b572d29-5d04-4b2b-bcf0-310054fbd134}}).
+Report: [amphibian_16S_primer_survey.md](reports/amphibian_16S_primer_survey.md).
 
 ## 8e. Host-matched databases and reference-order uncertainty
 
@@ -211,9 +211,9 @@ Report: [amphibian_16S_primer_survey.md]({{artifact:1b572d29-5d04-4b2b-bcf0-3100
 - **Top-hit metrics:** the median 95% width of the top-hit inhibitory share is 0.09 (meta), 0.03 (bullfrog) and 0.25 (SERDP).
 - **Conclusions:** no significance call flipped, but effect sizes shifted widely, e.g. adult vs larvae rank-biserial 0.19–0.49.
 
-![Per-sample intervals]({{artifact:179fb6aa-0c73-4640-b7af-7bb32d64cf64}})
+![Per-sample intervals](figures/fig_per_sample_intervals.png)
 
-Report: [AmphiBac_hostmatch_order_addendum.md]({{artifact:678a8fea-f010-4664-ae66-5bf4d79e4b28}}).
+Report: [AmphiBac_hostmatch_order_addendum.md](reports/AmphiBac_hostmatch_order_addendum.md).
 ## 8f. Worked example: one tied SERDP read through the order permutations
 
 This traces one feature through 1,001 **real** vsearch runs (the distributed order plus 1,000 shuffles, q2-vsearch closed-reference settings): `6a40d31c…`, 150 bp, 6,187 rarefied reads. It is the feature that drives the bimodal SERDP Bd-load slope in 8e.
@@ -223,9 +223,9 @@ This traces one feature through 1,001 **real** vsearch runs (the distributed ord
 - **Per frog.** 12 frogs carry the read: 10 infected Panama (Ngäbe-Buglé) frogs, where it makes up to 0.47 of reads, plus two others at ≤0.006. In the three heaviest carriers, the top-hit inhibitory share falls from 0.56–0.61 to 0.09–0.18 when the call switches to NoEffect.
 - **Bd load.** Flipping only this call, with every other feature at its default-order call, moves the Bd-load slope among the 100 infected frogs from +0.09 per SD (p = 0.49) to −0.14 (p = 0.30). That single switch spans most of the 10,000-order 95% range (−0.18 to +0.14).
 
-![Tied feature walkthrough]({{artifact:cc55e8c5-2a1e-40fb-a705-c3b233db73fd}})
+![Tied feature walkthrough](figures/fig_tied_feature_walkthrough.png)
 
-Tables: [tied_feature_references.csv]({{artifact:4690de67-7760-4a8e-8c68-5c9242c8532a}}), [tied_feature_real_runs.csv]({{artifact:db06260b-4cca-4864-be1b-6313824e67f8}}), [tied_feature_frogs.csv]({{artifact:0454ee67-98ad-468e-8624-dffc9d694200}}). Script: [tied_feature_walkthrough.py]({{artifact:87cffd2a-7b89-4540-a616-23184683316b}}).
+Tables: [tied_feature_references.csv](tables/tied_feature_references.csv), [tied_feature_real_runs.csv](tables/tied_feature_real_runs.csv), [tied_feature_frogs.csv](tables/tied_feature_frogs.csv). Script: [tied_feature_walkthrough.py](scripts/tied_feature_walkthrough.py).
 
 ## 8g. How often the database is used to predict function
 
@@ -253,7 +253,7 @@ The survey covers works citing Woodhams et al. 2015 (*Ecology* 96:595, doi 10.18
 - **Not verified.** The table also records whether each study linked predictions to Bd and whether it ran its own assays. Neither field was audited.
 - **Coverage.** Studies that cite only the AmphiBac 2023/2025 releases or the GitHub repository are not counted.
 
-Table: [woodhams2015_citers_classified.csv]({{artifact:f12dbce2-573d-40ae-a5e7-125f85c95d8e}}). Script: [woodhams2015_citation_survey.py]({{artifact:456d6a28-c6d6-40d7-bfa6-b92b6f30a555}}).
+Table: [woodhams2015_citers_classified.csv](tables/woodhams2015_citers_classified.csv). Script: [woodhams2015_citation_survey.py](scripts/woodhams2015_citation_survey.py).
 
 ## 8h. Does a different Inhibitory cutoff (or an IC50) help?
 
@@ -271,15 +271,15 @@ Table: [woodhams2015_citers_classified.csv]({{artifact:f12dbce2-573d-40ae-a5e7-1
 - **The cutoff mainly changes prevalence:** the share of isolates called Inhibitory falls from 91% at 0 to 19% at 95.
 - **Within-study agreement is roughly double.** Restricting hits to the *same* study gives κ 0.25–0.43 and ρ ≈ 0.48. Some of these hits may be re-isolates of the same strain, so this is an approximate ceiling. The limit is lab/assay heterogeneity, not the threshold.
 
-![Cutoff sweep]({{artifact:92fb2e8a-8a52-4572-a30f-1883a1707dd4}})
+![Cutoff sweep](figures/fig_cutoff_sweep.png)
 
-Table: [cutoff_sweep_results.xlsx]({{artifact:968698c3-29c6-497b-9623-3900eb29db8f}}). Script: [cutoff_sweep.py]({{artifact:6a9688d3-51ad-44d0-808e-93139824f7ca}}).
+Table: [cutoff_sweep_results.xlsx](tables/cutoff_sweep_results.xlsx). Script: [cutoff_sweep.py](scripts/cutoff_sweep.py).
 
 ## 8i. Paired studies: AmphiBac vs each study's own isolates
 
 **Question.** In studies that both cultured and sequenced, the study's own Bd-assayed isolates give a label for some of its own ASVs. Does the pipeline's call for those ASVs agree once the study's isolates are removed from AmphiBac?
 
-**Data.** Eight curated paired studies were considered ([paired_culture_amplicon_studies.xlsx]({{artifact:fbc12368-3f52-47fb-a4f7-857d92a4a5fe}})). Four were usable at sequence level:
+**Data.** Eight curated paired studies were considered ([paired_culture_amplicon_studies.xlsx](tables/paired_culture_amplicon_studies.xlsx)). Four were usable at sequence level:
 - **Walke 2015/2017:** 719 scored isolates. The reads are one pooled file with no sample IDs. The supplied mapping file belongs to the separate bullfrog Bd experiment, so this study is pooled.
 - **Rebollar 2019:** 354 scored isolates. Reads were demultiplexed by index read into 61 barcode groups, R01–R61, covering 56% of spots; there are no host labels.
 - **Bletz 2018:** 694 isolates with Bd and Bsal assays from Dryad, from the same populations but different swabs.
@@ -331,11 +331,49 @@ The other studies were not usable: Jiménez 2019 has no isolate sequences, the *
 - Ellison scores are provisional.
 - All results use 150-nt V4; Ellison's V3–V4 reads were reduced to merged reads only (28%).
 
-![Paired-study κ by rule]({{artifact:67003799-5d4f-46c0-b682-76227461a438}})
+![Paired-study κ by rule](figures/paired_kappa_by_rule.png)
 
-Files: [paired_asv_agreement.xlsx]({{artifact:8385f84a-000a-4ccf-8e41-2e23da109505}}) (per-ASV calls, agreement, per-sample, Bd tests, Rebollar barcodes, README), [paired_asv_tables.tar.gz]({{artifact:844e1d8c-bce4-4e57-9ed8-0f2f2f09ec2c}}), [paired_analysis_scripts.tar.gz]({{artifact:7d892d66-f3c3-47bc-bc7e-b06db650f9c2}}).
+Files: [paired_asv_agreement.xlsx](tables/paired_asv_agreement.xlsx) (per-ASV calls, agreement, per-sample, Bd tests, Rebollar barcodes, README), [paired_asv_tables.tar.gz](tables/paired_asv_tables.tar.gz), [paired_analysis_scripts.tar.gz](scripts/paired_analysis_scripts.tar.gz).
 
-Report: [AmphiBac_paired_study_report.md]({{artifact:d9143200-974c-476e-b83d-fd1ba83f0be6}}).
+Report: [AmphiBac_paired_study_report.md](reports/AmphiBac_paired_study_report.md).
+
+## 8j. Exact-sequence groups in AmphiBac, and how identical isolates compare by distance, host and study
+
+**Collapsed database.** Isolates were grouped by identical V4 (515F–806R) and identical V3–V4 (341F–805R) sequence. Each unique sequence has its label counts, a consensus call and a score summary. The consensus is a single isolate, unanimous, majority (>50% of tested isolates) or no majority.
+
+| | V4 | V3–V4 |
+|---|---|---|
+| Isolates spanning the region | 6,372 | 6,148 |
+| Unique sequences | 1,423 | 2,175 |
+| Single-isolate sequences | 867 | 1,420 |
+| Sequences with ≥2 tested isolates | 556 | 755 |
+| … with conflicting Bd labels | 381 (68.5%) | 454 (60.1%) |
+| … conflicting within one study | 287 | 335 |
+| … unanimous Inhibitory | 44 | 95 |
+| … majority Inhibitory | 89 | 112 |
+| … no majority | 134 | 172 |
+
+- Of 366 conflicting V4 sequences with V3–V4 coverage, 239 split into more than one V3–V4 sequence, but only 52 split into label-pure groups.
+- The largest V4 sequence (*Microbacterium*) has 323 isolates from 8 studies: 93 Inhibitory, 219 NoEffect and 11 Facilitating.
+- The collapsed FASTAs carry the label counts, consensus and median score in each header, so a pipeline can report "ambiguous" instead of choosing one isolate's label.
+
+**Identical-sequence pairs.** Every pair of isolates sharing an identical sequence was listed, with each isolate's amphibian host species, GPS coordinates (valid for 8,101 of 8,739 isolates), the great-circle distance between them, and their labels and scores.
+- **Regions:** V3 (341F–518R, either orientation, 7,234 isolates, median 155 nt) gives 173,952 pairs; V4 gives 149,889.
+- **Chance level:** two random tested isolates share a label 44% of the time.
+- **Agreement by distance** (group-weighted):
+  - V4: same site 68%, 1–1,000 km 51–60%, 1,000–5,000 km 48%, >5,000 km 44%.
+  - V3: 66%, 50–64%, 46% and 45%.
+- **By study:** same study 65% vs different studies 46% (V4); V3 is similar (66% vs 47%). Same-study pairs agree more at every distance where both kinds of pair exist (V4: 62% vs 51% at 1–10 km, 56% vs 38% at 10–100 km, 59% vs 56% at 100–1,000 km).
+- **By host species:** same host 68% vs different host 52% (V4), but the gain is inconsistent. At the same site it is 70% vs 65%; at 10–100 km it is 40% vs 58%. Beyond 1,000 km there are almost no same-host pairs (2 sequence groups).
+- **Score gap:** the median difference in score between identical isolates is 18–20 points at the same site, 19–26 points at 1–1,000 km and about 40 points beyond 1,000 km (V4 and V3 alike).
+- **Interpretation:** study identity tracks label agreement more closely than distance or host species. Same-site pairs are all within one study, and pairs beyond 1,000 km are all cross-study, so distance and lab effects cannot be fully separated.
+- **Caveats:** these are descriptive, group-weighted rates without tests, because pairs within a sequence group are not independent. Host names are AmphiBac's (*Rana* and *Lithobates* are not merged).
+
+![Exact pairs by distance](figures/fig_exact_pairs_distance.png)
+
+**Raw-data export (paired studies).** The fastq files and metadata used in 8i were exported to the user's Downloads folder (`AmphiBac_paired_reads_export/`, 10.8 GB, 471 files). It includes Rebollar 2019 demultiplexed into R01–R61 (8,908,591 of 15,789,745 spots). Walke 2015 cannot be split, because the SRA reads lack barcodes even with the user's global mapping file. Ellison 2019 is available only as FASTA. Copies of the README, manifest and demultiplex counts: [paired_reads_export_README.txt](tables/paired_reads_export_README.txt), [paired_reads_export_MANIFEST.tsv](tables/paired_reads_export_MANIFEST.tsv), [rebollar2019_demultiplex_counts.csv](tables/rebollar2019_demultiplex_counts.csv).
+
+Tables: [AmphiBac_exact_V4_V3V4_groups.xlsx](tables/AmphiBac_exact_V4_V3V4_groups.xlsx), [AmphiBac_2025.1_V4_unique.fasta](tables/AmphiBac_2025.1_V4_unique.fasta), [AmphiBac_2025.1_V3V4_unique.fasta](tables/AmphiBac_2025.1_V3V4_unique.fasta), [AmphiBac_exact_pairs_V3_V4_summary.xlsx](tables/AmphiBac_exact_pairs_V3_V4_summary.xlsx), [exact_pairs_distance_split_summary.csv](tables/exact_pairs_distance_split_summary.csv), [pairs_V3.csv.gz](tables/pairs_V3.csv.gz), [pairs_V4.csv.gz](tables/pairs_V4.csv.gz), [V3_341F_518R.fasta](tables/V3_341F_518R.fasta). Script: [exact_groups_and_pairs.py](scripts/exact_groups_and_pairs.py) (assembled from session code).
 
 ## 9. Recommendations
 
@@ -359,6 +397,7 @@ Report: [AmphiBac_paired_study_report.md]({{artifact:d9143200-974c-476e-b83d-fd1
 13. **State the matching rule exactly:** tool, identity, coverage, strand, database release and subset. 15 of 57 predictive papers did not.
 14. **Don't tune the 80 cutoff.** Model the continuous score with study (assay) as a random effect, or standardise scores within study before pooling. New assays with dilution series would allow true IC50s.
 15. **Hold out the study's own isolates when validating.** In paired studies, including them roughly doubles κ (0.08 → 0.32 pooled, top hit), so agreement within a lab's own data is partly circular.
+16. **Collapse identical reference sequences before matching.** Report the label counts for each unique sequence (or call it ambiguous) rather than one isolate's label. In 68% of V4 sequences tested more than once, the isolates disagree.
 
 ## 10. Caveats
 
@@ -387,36 +426,39 @@ Report: [AmphiBac_paired_study_report.md]({{artifact:d9143200-974c-476e-b83d-fd1
 ## 12. File index
 
 **Reports**
-- [Round 1: database audit, top-hit mechanics, length × threshold, real-data impact]({{artifact:68283292-5522-4f52-929b-09571edb7201}})
-- [Round 2: permutation null, genus baseline, phylogenetic signal, releases, bullfrog Bd]({{artifact:8887dd6f-7443-4aef-bcb0-4245efda3b44}})
-- [Round 3: ten 16S windows of 254–1,100 bp]({{artifact:20ea9098-1f41-46ab-8a4c-2f31e52fd496}})
+- [Round 1: database audit, top-hit mechanics, length × threshold, real-data impact](reports/AmphiBac_prediction_robustness_report.md)
+- [Round 2: permutation null, genus baseline, phylogenetic signal, releases, bullfrog Bd](reports/AmphiBac_robustness_round2_addendum.md)
+- [Round 3: ten 16S windows of 254–1,100 bp](reports/AmphiBac_robustness_round3_windows_addendum.md)
 
 **Key tables**
-- Database audit: [audit_per_sequence.csv]({{artifact:76d77534-2987-4b44-99f0-acd51045b8ce}}), [audit_identical_V4_groups.csv]({{artifact:5e4d146f-ca89-4e3c-b0f7-36f9c727bfa9}})
-- Top-hit mechanics: [tophit_summary.xlsx]({{artifact:4059a0e7-156e-4368-8fdd-b4b6c5ef185b}})
-- Length × threshold: [lt_length_threshold_summary.xlsx]({{artifact:dca8f85d-9cb7-452e-a77c-26d9476052e0}}), [lt_mismatch_table.csv]({{artifact:12f3afda-f4b1-4728-ab84-a002a2f21761}})
-- Real-data impact: [realdata_impact_summary.xlsx]({{artifact:c0bc7610-92fa-444e-9876-a604fe00dd95}}), [meta_per_sample_methods.csv]({{artifact:c99f3b59-0fb2-40d3-9194-db86479dee0c}}), [bf_per_sample_methods.csv]({{artifact:ff449495-bf24-4712-bb39-89fc00548481}})
-- Null and genus: [round2_null_genus_summary.xlsx]({{artifact:425f654c-4028-4320-839e-98cb6910588d}}), [genus_assignments.csv]({{artifact:5f91e1d1-4bab-4e34-903c-fda11446522b}})
-- Phylogenetic signal: [r2_phylo_signal_summary.xlsx]({{artifact:9ba920fb-3c5b-45ac-82ee-3582c75f5193}})
-- Release stability: [AmphiBac_round2_release_stability_summary.xlsx]({{artifact:2fcd0bbb-7230-4184-bb96-6f6470fe1b1c}})
-- Bullfrog Bd: [bd_validation_tests.xlsx]({{artifact:4cd17f3e-ee0e-486a-9346-e704ebf9c55d}})
-- SERDP Bd: [SERDP_AmphiBac_Bd_tests.xlsx]({{artifact:c994ebbb-e60f-4167-9653-d84df84ef997}}), [serdp_per_sample_metrics.csv]({{artifact:2a986529-db6d-4fcf-8735-feae89a6747d}})
-- Fragment coverage: [candidate_windows.csv]({{artifact:7c5c57f9-3120-4954-aeb4-21cd6e9af97f}})
-- Round-3 windows: [r3_window_synthesis_panel.csv]({{artifact:e4665aa1-6e8a-4540-8839-8f34cdb3212b}}), [AmphiBac_round3_prediction_grid.xlsx]({{artifact:921588d3-1d6b-46a5-93b9-723bd664c464}}), [r3_decay_signal_tables.xlsx]({{artifact:0535790a-e640-43d0-a091-559c1079883f}}), [AmphiBac_round3_prospective_windows.xlsx]({{artifact:fbb2fab4-9ad3-4c89-a2da-afd9839f66a3}})
+- Database audit: [audit_per_sequence.csv](tables/audit_per_sequence.csv), [audit_identical_V4_groups.csv](tables/audit_identical_V4_groups.csv)
+- Top-hit mechanics: [tophit_summary.xlsx](tables/tophit_summary.xlsx)
+- Length × threshold: [lt_length_threshold_summary.xlsx](tables/lt_length_threshold_summary.xlsx), [lt_mismatch_table.csv](tables/lt_mismatch_table.csv)
+- Real-data impact: [realdata_impact_summary.xlsx](tables/realdata_impact_summary.xlsx), [meta_per_sample_methods.csv](tables/meta_per_sample_methods.csv), [bf_per_sample_methods.csv](tables/bf_per_sample_methods.csv)
+- Null and genus: [round2_null_genus_summary.xlsx](tables/round2_null_genus_summary.xlsx), [genus_assignments.csv](tables/genus_assignments.csv)
+- Phylogenetic signal: [r2_phylo_signal_summary.xlsx](tables/r2_phylo_signal_summary.xlsx)
+- Release stability: [AmphiBac_round2_release_stability_summary.xlsx](tables/AmphiBac_round2_release_stability_summary.xlsx)
+- Bullfrog Bd: [bd_validation_tests.xlsx](tables/bd_validation_tests.xlsx)
+- SERDP Bd: [SERDP_AmphiBac_Bd_tests.xlsx](tables/SERDP_AmphiBac_Bd_tests.xlsx), [serdp_per_sample_metrics.csv](tables/serdp_per_sample_metrics.csv)
+- Fragment coverage: [candidate_windows.csv](tables/candidate_windows.csv)
+- Round-3 windows: [r3_window_synthesis_panel.csv](tables/r3_window_synthesis_panel.csv), [AmphiBac_round3_prediction_grid.xlsx](tables/AmphiBac_round3_prediction_grid.xlsx), [r3_decay_signal_tables.xlsx](tables/r3_decay_signal_tables.xlsx), [AmphiBac_round3_prospective_windows.xlsx](tables/AmphiBac_round3_prospective_windows.xlsx)
 
 **Inputs and scripts**
-- Inputs: [database bundle]({{artifact:635e3d25-3992-409c-9c87-382965c05cb1}}), [window fragments]({{artifact:305d0f1b-add2-4c0a-b447-f74675b90744}})
-- Round 1: [audit, top-hit, length/threshold, real-data]({{artifact:33a0a17c-c8e2-46d1-9ed3-15d1899b5395}})
-- Round 2: [null/genus]({{artifact:eeb11567-e054-4544-8bcf-41fe7a372658}}), [phylogenetic signal]({{artifact:90f4dade-a5dc-4dca-860c-a908783232f5}}), [releases]({{artifact:9bf9b060-cf92-4381-9fe8-84e588464d41}}), [bullfrog Bd]({{artifact:24d6f2d9-53cc-4dca-9b29-3e8b2ea48061}})
-- SERDP: [SERDP]({{artifact:f07dba6f-e7ba-4831-9e23-1a4be319829c}})
-- Round 3: [prediction grid]({{artifact:603fd98b-a8be-422d-b936-0de50d9d70fc}}), [decay/signal]({{artifact:2e7f4b77-7a9f-42f6-87a2-28aa43d4531e}}), [prospective]({{artifact:d0c3d1ff-d25b-47bf-9930-e3ea56bd17a6}})
+- Inputs: [database bundle](inputs/amphibac_2025.1_testbundle.tar.gz), [window fragments](inputs/amphibac_window_fragments.tar.gz)
+- Round 1: [audit, top-hit, length/threshold, real-data](scripts/AmphiBac_robustness_scripts.tar.gz)
+- Round 2: [null/genus](scripts/round2_null_genus_scripts.tar.gz), [phylogenetic signal](scripts/r2_phylo_scripts.tar.gz), [releases](scripts/AmphiBac_round2_release_scripts.tar.gz), [bullfrog Bd](scripts/bd_validation.py)
+- SERDP: [SERDP](scripts/SERDP_scripts.tar.gz)
+- Round 3: [prediction grid](scripts/r3_prediction_grid_scripts.tar.gz), [decay/signal](scripts/r3_decay_signal_scripts.tar.gz), [prospective](scripts/r3_prospective_scripts.tar.gz)
 
 **Worked example and citation survey (8f, 8g)**
-- [fig_tied_feature_walkthrough.png]({{artifact:cc55e8c5-2a1e-40fb-a705-c3b233db73fd}}), [tied_feature_references.csv]({{artifact:4690de67-7760-4a8e-8c68-5c9242c8532a}}), [tied_feature_real_runs.csv]({{artifact:db06260b-4cca-4864-be1b-6313824e67f8}}), [tied_feature_frogs.csv]({{artifact:0454ee67-98ad-468e-8624-dffc9d694200}}), [tied_feature_walkthrough.py]({{artifact:87cffd2a-7b89-4540-a616-23184683316b}})
-- [woodhams2015_citers_classified.csv]({{artifact:f12dbce2-573d-40ae-a5e7-125f85c95d8e}}), [woodhams2015_citation_survey.py]({{artifact:456d6a28-c6d6-40d7-bfa6-b92b6f30a555}})
+- [fig_tied_feature_walkthrough.png](figures/fig_tied_feature_walkthrough.png), [tied_feature_references.csv](tables/tied_feature_references.csv), [tied_feature_real_runs.csv](tables/tied_feature_real_runs.csv), [tied_feature_frogs.csv](tables/tied_feature_frogs.csv), [tied_feature_walkthrough.py](scripts/tied_feature_walkthrough.py)
+- [woodhams2015_citers_classified.csv](tables/woodhams2015_citers_classified.csv), [woodhams2015_citation_survey.py](scripts/woodhams2015_citation_survey.py)
 
 **Cutoff sweep (8h)**
-- [fig_cutoff_sweep.png]({{artifact:92fb2e8a-8a52-4572-a30f-1883a1707dd4}}), [cutoff_sweep_results.xlsx]({{artifact:968698c3-29c6-497b-9623-3900eb29db8f}}), [cutoff_sweep.py]({{artifact:6a9688d3-51ad-44d0-808e-93139824f7ca}})
+- [fig_cutoff_sweep.png](figures/fig_cutoff_sweep.png), [cutoff_sweep_results.xlsx](tables/cutoff_sweep_results.xlsx), [cutoff_sweep.py](scripts/cutoff_sweep.py)
 
 **Paired studies (8i)**
-- [AmphiBac_paired_study_report.md]({{artifact:d9143200-974c-476e-b83d-fd1ba83f0be6}}), [paired_asv_agreement.xlsx]({{artifact:8385f84a-000a-4ccf-8e41-2e23da109505}}), [paired_kappa_by_rule.png]({{artifact:67003799-5d4f-46c0-b682-76227461a438}}), [paired_asv_tables.tar.gz]({{artifact:844e1d8c-bce4-4e57-9ed8-0f2f2f09ec2c}}), [paired_analysis_scripts.tar.gz]({{artifact:7d892d66-f3c3-47bc-bc7e-b06db650f9c2}}), [paired_culture_amplicon_studies.xlsx]({{artifact:fbc12368-3f52-47fb-a4f7-857d92a4a5fe}})
+- [AmphiBac_paired_study_report.md](reports/AmphiBac_paired_study_report.md), [paired_asv_agreement.xlsx](tables/paired_asv_agreement.xlsx), [paired_kappa_by_rule.png](figures/paired_kappa_by_rule.png), [paired_asv_tables.tar.gz](tables/paired_asv_tables.tar.gz), [paired_analysis_scripts.tar.gz](scripts/paired_analysis_scripts.tar.gz), [paired_culture_amplicon_studies.xlsx](tables/paired_culture_amplicon_studies.xlsx)
+
+**Exact groups, pairs and raw-data export (8j)**
+- [fig_exact_pairs_distance.png](figures/fig_exact_pairs_distance.png), [AmphiBac_exact_V4_V3V4_groups.xlsx](tables/AmphiBac_exact_V4_V3V4_groups.xlsx), [AmphiBac_2025.1_V4_unique.fasta](tables/AmphiBac_2025.1_V4_unique.fasta), [AmphiBac_2025.1_V3V4_unique.fasta](tables/AmphiBac_2025.1_V3V4_unique.fasta), [AmphiBac_exact_pairs_V3_V4_summary.xlsx](tables/AmphiBac_exact_pairs_V3_V4_summary.xlsx), [exact_pairs_distance_split_summary.csv](tables/exact_pairs_distance_split_summary.csv), [pairs_V3.csv.gz](tables/pairs_V3.csv.gz), [pairs_V4.csv.gz](tables/pairs_V4.csv.gz), [V3_341F_518R.fasta](tables/V3_341F_518R.fasta), [exact_groups_and_pairs.py](scripts/exact_groups_and_pairs.py), [paired_reads_export_README.txt](tables/paired_reads_export_README.txt), [paired_reads_export_MANIFEST.tsv](tables/paired_reads_export_MANIFEST.tsv), [rebollar2019_demultiplex_counts.csv](tables/rebollar2019_demultiplex_counts.csv)
